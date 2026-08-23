@@ -21,7 +21,7 @@ QStringList PlumbumPlatformApplication::CheckPrerequisites()
         const auto osslCurVersion = QSslSocket::sslLibraryVersionString();
         LOG("Current OpenSSL version: " + osslCurVersion);
         LOG("Required OpenSSL version: " + osslReqVersion);
-        errors << "Plumbum cannot run without OpenSSL.";
+        errors << "Qplumbum cannot run without OpenSSL.";
         errors << "This is usually caused by using the wrong version of OpenSSL";
         errors << "Required=" + osslReqVersion + "Current=" + osslCurVersion;
     }
@@ -38,7 +38,7 @@ bool PlumbumPlatformApplication::Initialize()
         LOG("Command line:" QVLOG_A(errorMessage));
         if (!canContinue)
         {
-            LOG("Fatal, Plumbum cannot continue.");
+            LOG("Fatal, Qplumbum cannot continue.");
             return false;
         }
         else
@@ -147,9 +147,9 @@ bool PlumbumPlatformApplication::parseCommandLine(QString *errorMessage, bool *c
     QCommandLineOption noAutoConnectionOption("noAutoConnection", QObject::tr("Do not automatically connect"));
     QCommandLineOption disconnectOption("disconnect", QObject::tr("Stop current connection"));
     QCommandLineOption reconnectOption("reconnect", QObject::tr("Reconnect last connection"));
-    QCommandLineOption exitOption("exit", QObject::tr("Exit Plumbum"));
+    QCommandLineOption exitOption("exit", QObject::tr("Exit Qplumbum"));
     //
-    parser.setApplicationDescription(QObject::tr("Plumbum - A Linux Qt6 frontend for V2Ray."));
+    parser.setApplicationDescription(QObject::tr("Qplumbum - A Linux Qt6 frontend for V2Ray."));
     parser.setSingleDashWordOptionMode(QCommandLineParser::ParseAsLongOptions);
     //
     parser.addOption(noAPIOption);

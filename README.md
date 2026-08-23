@@ -1,16 +1,16 @@
 <p align="center">
-<img width="210" height="210" align="left" style="float: left; margin: 0 10px 0 0;" src="https://raw.githubusercontent.com/ruizhi-lab/Plumbum/main/assets/icons/plumbum.png" alt="Plumbum"/>
+<img width="210" height="210" align="left" style="float: left; margin: 0 10px 0 0;" src="https://raw.githubusercontent.com/ruizhi-lab/Qplumbum/main/assets/icons/plumbum.png" alt="Qplumbum"/>
 </br>
-<h1>Plumbum - Unleash Your Xray & V2Ray</h1>
+<h1>Qplumbum - Unleash Your Xray & V2Ray</h1>
 基于 <b>Qt6</b> 的 Linux <b>Xray / V2Ray</b> 客户端
 </br>
 现代 Qt6 QML 界面 · Linux 原生集成 · Xray/V2Ray 双内核 · 多语言
 </p>
 
 <p align="center">
-<a href="https://github.com/ruizhi-lab/Plumbum/releases"><img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue"/></a>
-<a href="https://github.com/ruizhi-lab/Plumbum/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-GPLv3-green"/></a>
-<a href="https://github.com/ruizhi-lab/Plumbum"><img alt="Qt6" src="https://img.shields.io/badge/Qt-6.5%2B-brightgreen"/></a>
+<a href="https://github.com/ruizhi-lab/Qplumbum/releases"><img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue"/></a>
+<a href="https://github.com/ruizhi-lab/Qplumbum/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-GPLv3-green"/></a>
+<a href="https://github.com/ruizhi-lab/Qplumbum"><img alt="Qt6" src="https://img.shields.io/badge/Qt-6.5%2B-brightgreen"/></a>
 </p>
 
 ## ✨ 特性
@@ -40,8 +40,8 @@
 
 ```bash
 # 克隆并初始化子模块
-git clone --recurse-submodules https://github.com/ruizhi-lab/Plumbum.git
-cd Plumbum
+git clone --recurse-submodules https://github.com/ruizhi-lab/Qplumbum.git
+cd Qplumbum
 
 # QML 界面构建（推荐）
 cmake -B build \

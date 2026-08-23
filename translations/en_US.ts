@@ -516,7 +516,7 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Hide Plumbum</source>
+        <source>Hide Qplumbum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -779,7 +779,7 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Plumbum</source>
+        <source>Qplumbum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -965,7 +965,7 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Switch to Plumbum log</source>
+        <source>Switch to Qplumbum log</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -985,11 +985,11 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Quit Plumbum</source>
+        <source>Quit Qplumbum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Are you sure to exit Plumbum?</source>
+        <source>Are you sure to exit Qplumbum?</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
@@ -1146,6 +1146,30 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
     </message>
     <message>
         <source>Clear log</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Qplumbum - Xray/V2Ray Client</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Subscriptions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disconnected</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1346,7 +1370,7 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>These settings are used by Plumbum itself.
+        <source>These settings are used by Qplumbum itself.
 For example, for updating subscriptions.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1367,7 +1391,7 @@ For example, for updating subscriptions.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum Proxy</source>
+        <source>Qplumbum Proxy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1440,7 +1464,7 @@ Custom DNS Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum will allocate ports, for HTTP and SOCKS respectively, if enabled, for each kernel plugin.</source>
+        <source>Qplumbum will allocate ports, for HTTP and SOCKS respectively, if enabled, for each kernel plugin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1600,7 +1624,7 @@ Custom DNS Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum</source>
+        <source>Qplumbum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1741,8 +1765,8 @@ But could damage your server if improperly used.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>You may be about to set V2Ray core incorrectly to Plumbum itself, which is absolutely not correct.<byte value="xd"/>
-This won&apos;t trigger a fork bomb, however, since Plumbum works in singleton mode.<byte value="xd"/>
+        <source>You may be about to set V2Ray core incorrectly to Qplumbum itself, which is absolutely not correct.<byte value="xd"/>
+This won&apos;t trigger a fork bomb, however, since Qplumbum works in singleton mode.<byte value="xd"/>
 If your V2Ray core filename happened to be &apos;plumbum&apos;-something, you are totally free to ignore this warning.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1940,7 +1964,7 @@ If you insist to proceed, we&apos;re not providing with any support.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum was not built with NTP support.</source>
+        <source>Qplumbum was not built with NTP support.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1979,7 +2003,7 @@ If you insist to proceed, we&apos;re not providing with any support.</source>
     </message>
     <message>
         <source>Run TCPing or ICMPing periodically after connecting to a server.
-Plumbum will give a more accurate latency value if Enabled, but makes it easy to fingerprint the connection.</source>
+Qplumbum will give a more accurate latency value if Enabled, but makes it easy to fingerprint the connection.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2039,11 +2063,11 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Exit Plumbum</source>
+        <source>Exit Qplumbum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum - A cross-platform Qt frontend for V2Ray.</source>
+        <source>Qplumbum - A Linux Qt6 frontend for V2Ray.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2231,14 +2255,6 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Windows PE executable</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>macOS Mach-O executable</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>ELF x86 executable</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2267,7 +2283,7 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cannot Start Plumbum</source>
+        <source>Cannot Start Qplumbum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2275,7 +2291,7 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum has searched these paths below:</source>
+        <source>Qplumbum has searched these paths below:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2283,11 +2299,11 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum will now exit.</source>
+        <source>Qplumbum will now exit.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Failed to initialise Plumbum</source>
+        <source>Failed to initialise Qplumbum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2295,11 +2311,11 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum has found a config file, but it failed to be loaded due to some errors.</source>
+        <source>Qplumbum has found a config file, but it failed to be loaded due to some errors.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A workaround is to remove the this file and restart Plumbum:</source>
+        <source>A workaround is to remove the this file and restart Qplumbum:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2307,11 +2323,11 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum Cannot Continue</source>
+        <source>Qplumbum Cannot Continue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>You are running a lower version of Plumbum compared to the current config file.</source>
+        <source>You are running a lower version of Qplumbum compared to the current config file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2351,11 +2367,11 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Please upgrade firstly up to Plumbum v2.0/v2.1 and try again.</source>
+        <source>Please upgrade firstly up to Qplumbum v2.0/v2.1 and try again.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum has encountered an uncaught exception: </source>
+        <source>Qplumbum has encountered an uncaught exception: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2382,11 +2398,47 @@ This option may be useful for some desktop environments without tray support.</s
         <source>missing uuid</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Trojan link should start with trojan://</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid Trojan link: password, host and port are required.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show / Hide</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Not Connected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disconnect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connected: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Qplumbum - %1</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Plumbum::PlumbumWidgetApplication</name>
     <message>
-        <source>A new version of Plumbum is starting:</source>
+        <source>A new version of Qplumbum is starting:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2413,7 +2465,7 @@ This option may be useful for some desktop environments without tray support.</s
 <context>
     <name>Plumbum::components::QvUpdateChecker</name>
     <message>
-        <source>Plumbum Update</source>
+        <source>Qplumbum Update</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2436,7 +2488,7 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Please contact the plugin provider or report the issue to Plumbum Workgroup.</source>
+        <source>Please contact the plugin provider or report the issue to Qplumbum Workgroup.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2444,7 +2496,7 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The plugin will become fully functional after restarting Plumbum.</source>
+        <source>The plugin will become fully functional after restarting Qplumbum.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2479,6 +2531,18 @@ This option may be useful for some desktop environments without tray support.</s
     </message>
     <message>
         <source>Default Group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The default group cannot be deleted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TUN is currently supported only with an Xray core.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unsupported TUN configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2541,11 +2605,7 @@ This option may be useful for some desktop environments without tray support.</s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Plumbum tried to set, but failed because permission denied.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Check is skipped</source>
+        <source>Qplumbum tried to set, but failed because permission denied.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2575,6 +2635,14 @@ Maybe you have downloaded the wrong core?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Failed to start V2Ray core: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Timed out while checking V2Ray core.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>V2Ray core failed with an exit code: </source>
         <translation type="unfinished"></translation>
     </message>
@@ -2583,15 +2651,27 @@ Maybe you have downloaded the wrong core?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Configuration Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Invalid V2Ray Instance Status.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Core file not executable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to start V2Ray core for configuration validation: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Timed out while validating V2Ray configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>V2Ray configuration validation failed: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to write generated V2Ray configuration.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3759,7 +3839,7 @@ Maybe you have downloaded the wrong core?</source>
 <context>
     <name>MainWindowForm.ui</name>
     <message>
-        <source>Plumbum</source>
+        <source>Qplumbum</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3826,7 +3906,7 @@ Maybe you have downloaded the wrong core?</source>
 <context>
     <name>MainWindowWidget</name>
     <message>
-        <source>Plumbum Utilities</source>
+        <source>Qplumbum Utilities</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3861,6 +3941,679 @@ Maybe you have downloaded the wrong core?</source>
     </message>
     <message>
         <source>One SHA-256 per line. eg: 50c393f158c3de2db92fa9661bfb00eda5b67c3a777c88524ed3417509631625 6e6ed938298daf79a0173ebca30521a72ab07a9f535bfd6b178e0fc39dff2f4d b635d5701f7b12310fa94fae8040d3fc816a4dc2f0682a14ed4103aae39c0bd6 </source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ConnectionCard</name>
+    <message>
+        <source>latency</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disconnect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit JSON</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy share link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Test latency</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TopStatusBar</name>
+    <message>
+        <source>PAC Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Whitelist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Blacklist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Global</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Current connection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No active connection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Total ↑</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Total ↓</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disconnect</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ConnectionPage</name>
+    <message>
+        <source>Connections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Latency Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Update Subscription</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete connection &quot;%1&quot;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No connections in this group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Click &quot;Import&quot; to add a server link (vmess://, vless://, ss://, trojan:// ...)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit connection JSON</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Advanced editor: changes are validated as JSON before saving.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import from link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Paste one or more share links below:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Create new group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Group name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsPage</name>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Appearance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Follow System</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Light</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>System (Auto)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>V2Ray / Xray Core</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Core executable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>e.g. /usr/local/bin/xray or v2ray</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Apply</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Assets directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>geoip.dat / geosite.dat directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>API Statistics:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Stats port:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Local Proxy / Inbound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Configure the local SOCKS, HTTP and transparent proxy listeners used by Xray/V2Ray.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Listen address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SOCKS inbound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SOCKS port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SOCKS listen address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SOCKS UDP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SOCKS authentication</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>HTTP inbound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>HTTP port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>HTTP authentication</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TProxy inbound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TProxy port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TProxy IPv4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TProxy IPv6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TProxy TCP / UDP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TCP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>UDP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Set system proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Browser forwarder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Routing / DNS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Routing mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Whitelist (CN direct)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Blacklist (GFW proxy)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Global proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Domain strategy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Domain matcher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Force direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bypass CN mainland</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bypass private LAN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bypass BitTorrent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use V2Ray DNS for direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>DNS intercept</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>DNS servers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>One server per line, e.g. 1.1.1.1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Domain direct / block / proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct rules</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Block rules</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Proxy rules</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>IP direct / block / proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FakeDNS IP pool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FakeDNS pool size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Forward Proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable forward proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Host address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Authentication</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TUN System Proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Route all system traffic through the proxy via a virtual TUN interface.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>⚠ TUN requires an Xray core and root privileges or CAP_NET_ADMIN. Please select Xray and grant the required capability if needed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TUN IPv4:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>MTU:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TUN IPv6:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Auto route:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Strict route:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TUN sniffing:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Current group overrides</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select a group on the Connections page before enabling these options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Override routing rules</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Override DNS / FakeDNS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Override connection mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Override Forward Proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A modern Qt6 Xray / V2Ray client</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Xray / V2Ray protocols: VMess, VLESS, Shadowsocks, Trojan, HTTP, SOCKS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Kernel: xray-core / v2ray-core (v5 config)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SubscriptionPage</name>
+    <message>
+        <source>Subscriptions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Update All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add Subscription</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 nodes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Last update: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 d</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No subscriptions yet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add a subscription URL to auto-import server lists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add subscription</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Subscription name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete subscription &quot;%1&quot; and all its connections?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ConnectionListModel</name>
+    <message>
+        <source>Timeout</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PlumbumQMLProperty</name>
+    <message>
+        <source>(Unknown)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to start connection.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import failed: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Imported %1 connection(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Group &quot;%1&quot; created</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to delete group: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to rename group: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connection is not in the current group.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid JSON: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connection no longer exists.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to save connection configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connection configuration saved.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Automatic subscription updates disabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Subscription update interval set to %1 day(s).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Subscription &quot;%1&quot; created</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This connection cannot be serialized to a share link.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PAC mode changed, restarting connection...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PAC mode changed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TUN mode enabled, restarting connection...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TUN mode disabled, restarting connection...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TUN mode enabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TUN mode disabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Kernel crashed: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Subscription updated.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Subscription update failed.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

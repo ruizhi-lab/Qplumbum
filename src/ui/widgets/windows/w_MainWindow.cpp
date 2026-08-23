@@ -20,7 +20,7 @@
 #include <QScrollBar>
 
 #define QV_MODULE_NAME "MainWindow"
-#define TRAY_TOOLTIP_PREFIX "Plumbum " PLUMBUM_VERSION_STRING
+#define TRAY_TOOLTIP_PREFIX "Qplumbum " PLUMBUM_VERSION_STRING
 
 #define CheckCurrentWidget                                                                                                                           \
     auto widget = GetIndexWidget(connectionTreeView->currentIndex());                                                                                \
@@ -440,7 +440,7 @@ void MainWindow::keyPressEvent(QKeyEvent *e)
     // Ctrl + Q = Exit
     else if (e->modifiers() & Qt::ControlModifier && e->key() == Qt::Key_Q)
     {
-        if (QvMessageBoxAsk(this, tr("Quit Plumbum"), tr("Are you sure to exit Plumbum?")) == Yes)
+        if (QvMessageBoxAsk(this, tr("Quit Qplumbum"), tr("Are you sure to exit Qplumbum?")) == Yes)
             Action_Exit();
     }
     // Control + W = Close Window

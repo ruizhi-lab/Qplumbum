@@ -18,11 +18,11 @@ class InternalUtilsPlugin
     const QvPluginMetadata GetMetadata() const override
     {
         return { "Builtin Ultilities",                //
-                 "Plumbum Core Workgroup",             //
+                 "Qplumbum Core Workgroup",             //
                  "builtin_utils",                     //
-                 "Some useful ultilities for Plumbum", //
+                 "Some useful ultilities for Qplumbum", //
                  PLUMBUM_VERSION_STRING,               //
-                 "Plumbum/Plumbum",                     //
+                 "ruizhi-lab/Qplumbum",                 //
                  { COMPONENT_EVENT_HANDLER, COMPONENT_GUI },
                  UPDATE_NONE };
     }

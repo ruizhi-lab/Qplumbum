@@ -6,12 +6,12 @@ Version:        @VERSION@
 Release:        @RELEASE@
 Summary:        A Linux V2Ray graphical front-end
 License:        GPLv3
-URL:            https://plumbum.net/
+URL:            https://github.com/ruizhi-lab/Qplumbum
 
 # Source0 is created by:
 # pip install git-archive-all
-# git clone https://github.com/Plumbum/Plumbum.git
-# cd Plumbum
+# git clone https://github.com/ruizhi-lab/Qplumbum.git
+# cd Qplumbum
 # git archive-all --force-submodules ../@SOURCE0@
 Source0:        @SOURCE0@
 
@@ -41,15 +41,15 @@ Recommends:     %{name}-plugin-builtin-protocol-support%{?_isa} = %{version}-%{r
 Recommends:     %{name}-plugin-builtin-subscription-support%{?_isa} = %{version}-%{release}
 
 %package plugin-builtin-protocol-support
-Summary:        Plumbum Builtin Protocol Support
+Summary:        Qplumbum Builtin Protocol Support
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 
 %package plugin-builtin-subscription-support
-Summary:        Plumbum Builtin Subscription Support
+Summary:        Qplumbum Builtin Subscription Support
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 
 %description
-Plumbum is a Linux v2ray graphical front-end written in Qt 6.
+Qplumbum is a Linux v2ray graphical front-end written in Qt 6.
 Features:
     * Multi-distribution Linux support
     * Versatile Host Importing
@@ -64,7 +64,7 @@ For more details please see %{url}
 VMess, VLESS, SOCKS, HTTP, Shadowsocks, DNS, Dokodemo-door editor support.
 
 %description plugin-builtin-subscription-support
-Basic subscription support for Plumbum.
+Basic subscription support for Qplumbum.
 
 
 %prep
@@ -75,7 +75,7 @@ Basic subscription support for Plumbum.
 %cmake                    -DPLUMBUM_DISABLE_AUTO_UPDATE=ON \
 %{?with_check:            -DBUILD_TESTING=ON} \
 %{?with_use_system_libuv: -DUSE_SYSTEM_LIBUV=ON} \
-                          -DPLUMBUM_BUILD_INFO="Plumbum built from rpmbuild" \
+                          -DPLUMBUM_BUILD_INFO="Qplumbum built from rpmbuild" \
                           -DPLUMBUM_BUILD_EXTRA_INFO="$(rpmbuild --version), kernel-$(uname -r), qt-$(pkg-config --modversion Qt6Core)" \
                           -DPLUMBUM_DEFAULT_VCORE_PATH="%{_bindir}/v2ray" \
                           -DPLUMBUM_DEFAULT_VASSETS_PATH="%{_datadir}/v2ray" \

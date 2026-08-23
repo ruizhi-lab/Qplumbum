@@ -3,12 +3,12 @@
   <id>com.github.Plumbum</id>
   <metadata_license>CC-BY-SA-3.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <name>Plumbum</name>
-  <summary>Plumbum is a Linux v2ray graphical frontend written in Qt 6.</summary>
+  <name>Qplumbum</name>
+  <summary>Qplumbum is a Linux v2ray graphical frontend written in Qt 6.</summary>
 
   <description>
     <p>
-      Plumbum is a Linux v2ray graphical frontend written in Qt 6 which can improve v2ray user experience.
+      Qplumbum is a Linux v2ray graphical frontend written in Qt 6 which can improve v2ray user experience.
       It can help users to set up v2ray configuration files easily and automatically set the system proxy.
     </p>
   </description>
@@ -38,13 +38,13 @@
               <li>upstream: solved QTimer issue and golang memory leak issue</li>
               <li>fix: fixed duplicated scheme:// in GNOME system settings</li>
               <li>add: added os process signals support</li>
-              <li>add: enable hiding Plumbum when performing screenshot, fixed #283</li>
+              <li>add: enable hiding Qplumbum when performing screenshot, fixed #283</li>
           </ul>
         </p>
       </description>
     </release>
   </releases>
   <content_rating type="oars-1.1" />
-  <url type="homepage">https://github.com/Plumbum/Plumbum</url>
-  <url type="bugtracker">https://github.com/Plumbum/Plumbum/issues</url>
+  <url type="homepage">https://github.com/ruizhi-lab/Qplumbum</url>
+  <url type="bugtracker">https://github.com/ruizhi-lab/Qplumbum/issues</url>
 </component>

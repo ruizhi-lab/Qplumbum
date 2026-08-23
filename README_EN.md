@@ -1,6 +1,6 @@
-# Plumbum
+# Qplumbum
 
-Plumbum is a Linux desktop client for Xray and V2Ray, built with Qt 6 and QML. It provides a modern graphical interface for importing, editing and running Xray/V2Ray configurations.
+Qplumbum is a Linux desktop client for Xray and V2Ray, built with Qt 6 and QML. It provides a modern graphical interface for importing, editing and running Xray/V2Ray configurations.
 
 ## Highlights
 
@@ -21,8 +21,8 @@ The CI validation matrix covers Debian, Ubuntu, Fedora, Arch Linux, openSUSE, Ge
 Requirements: Linux, Qt 6.5+, CMake 3.21+, Qt6 QML/Quick Controls and Effects, gRPC, protobuf, libcurl and OpenSSL.
 
 ```bash
-git clone --recurse-submodules https://github.com/ruizhi-lab/Plumbum.git
-cd Plumbum
+git clone --recurse-submodules https://github.com/ruizhi-lab/Qplumbum.git
+cd Qplumbum
 cmake -B build -DPLUMBUM_UI_TYPE=QML -DPLUMBUM_EMBED_TRANSLATIONS=ON -DCMAKE_BUILD_TYPE=Release
 cmake --build build --parallel
 ```

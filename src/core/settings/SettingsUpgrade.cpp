@@ -348,7 +348,7 @@ namespace Plumbum
                 kernelConfig["enableAPI"] = root["apiConfig"].toObject()["enableAPI"];
                 kernelConfig["statsPort"] = root["apiConfig"].toObject()["statsPort"];
                 root["kernelConfig"] = kernelConfig;
-                UPGRADELOG("Finished upgrading config file for Plumbum Group Routing update.");
+                UPGRADELOG("Finished upgrading config file for Qplumbum Group Routing update.");
                 break;
             }
             case 12:
@@ -414,9 +414,9 @@ namespace Plumbum
                 //
                 QvMessageBoxWarn(nullptr, QObject::tr("Configuration Upgrade Failed"),
                                  QObject::tr("Unsupported config version number: ") + QSTRN(fromVersion) + NEWLINE + NEWLINE +
-                                     QObject::tr("Please upgrade firstly up to Plumbum v2.0/v2.1 and try again."));
-                LOG("The configuration version of your old Plumbum installation is out-of-date and that"
-                    " version is not supported anymore, please try to update to an intermediate version of Plumbum first.");
+                                     QObject::tr("Please upgrade firstly up to Qplumbum v2.0/v2.1 and try again."));
+                LOG("The configuration version of your old Qplumbum installation is out-of-date and that"
+                    " version is not supported anymore, please try to update to an intermediate version of Qplumbum first.");
                 qApp->exit(1);
             }
         }

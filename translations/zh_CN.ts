@@ -823,8 +823,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_ImportConfig.ui" line="116" />
-            <source>Hide Plumbum</source>
-            <translation>隐藏 Plumbum</translation>
+            <source>Hide Qplumbum</source>
+            <translation>隐藏 Qplumbum</translation>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_ImportConfig.ui" line="123" />
@@ -1150,8 +1150,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         <name>MainWindow</name>
         <message>
             <location filename="../src/ui/widgets/windows/w_MainWindow.ui" line="20" />
-            <source>Plumbum</source>
-            <translation>Plumbum</translation>
+            <source>Qplumbum</source>
+            <translation>Qplumbum</translation>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_MainWindow.ui" line="46" />
@@ -1388,8 +1388,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_MainWindow_extra.cpp" line="261" />
-            <source>Switch to Plumbum log</source>
-            <translation>切换到 Plumbum 日志</translation>
+            <source>Switch to Qplumbum log</source>
+            <translation>切换到 Qplumbum 日志</translation>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_MainWindow.cpp" line="128" />
@@ -1413,13 +1413,13 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_MainWindow.cpp" line="443" />
-            <source>Quit Plumbum</source>
-            <translation>退出 Plumbum</translation>
+            <source>Quit Qplumbum</source>
+            <translation>退出 Qplumbum</translation>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_MainWindow.cpp" line="443" />
-            <source>Are you sure to exit Plumbum?</source>
-            <translation>确信要退出 Plumbum 吗？</translation>
+            <source>Are you sure to exit Qplumbum?</source>
+            <translation>确信要退出 Qplumbum 吗？</translation>
         </message>
         <message numerus="yes">
             <location filename="../src/ui/widgets/windows/w_MainWindow.cpp" line="609" />
@@ -1615,8 +1615,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         </message>
         <message>
             <location filename="../src/ui/qml/forms/MainWindow.qml" line="14" />
-            <source>Plumbum - Xray/V2Ray Client</source>
-            <translation>Plumbum - Xray/V2Ray 客户端</translation>
+            <source>Qplumbum - Xray/V2Ray Client</source>
+            <translation>Qplumbum - Xray/V2Ray 客户端</translation>
         </message>
         <message>
             <location filename="../src/ui/qml/forms/MainWindow.qml" line="94" />
@@ -1648,16 +1648,16 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         <name>MainWindowForm.ui</name>
         <message>
             <location filename="../src/ui/qml/forms/MainWindowForm.ui.qml" line="30" />
-            <source>Plumbum</source>
-            <translation>Plumbum</translation>
+            <source>Qplumbum</source>
+            <translation>Qplumbum</translation>
         </message>
     </context>
     <context>
         <name>MainWindowWidget</name>
         <message>
             <location filename="../src/plugins/utils/core/MainWindowWidget.ui" line="14" />
-            <source>Plumbum Utilities</source>
-            <translation>Plumbum 工具</translation>
+            <source>Qplumbum Utilities</source>
+            <translation>Qplumbum 工具</translation>
         </message>
     </context>
     <context>
@@ -1837,8 +1837,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         <name>Plumbum::PlumbumWidgetApplication</name>
         <message>
             <location filename="../src/ui/widgets/PlumbumWidgetApplication.cpp" line="59" />
-            <source>A new version of Plumbum is starting:</source>
-            <translation>新版 Plumbum 正在启动：</translation>
+            <source>A new version of Qplumbum is starting:</source>
+            <translation>新版 Qplumbum 正在启动：</translation>
         </message>
         <message>
             <location filename="../src/ui/widgets/PlumbumWidgetApplication.cpp" line="61" />
@@ -1870,8 +1870,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         <name>Plumbum::components::QvUpdateChecker</name>
         <message>
             <location filename="../src/components/update/UpdateChecker.cpp" line="83" />
-            <source>Plumbum Update</source>
-            <translation>Plumbum 更新</translation>
+            <source>Qplumbum Update</source>
+            <translation>Qplumbum 更新</translation>
         </message>
     </context>
     <context>
@@ -1898,8 +1898,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         </message>
         <message>
             <location filename="../src/components/plugins/QvPluginHost.cpp" line="74" />
-            <source>Please contact the plugin provider or report the issue to Plumbum Workgroup.</source>
-            <translation>请联系插件提供者或将问题报告到 Plumbum 工作组。</translation>
+            <source>Please contact the plugin provider or report the issue to Qplumbum Workgroup.</source>
+            <translation>请联系插件提供者或将问题报告到 Qplumbum 工作组。</translation>
         </message>
         <message>
             <location filename="../src/components/plugins/QvPluginHost.cpp" line="130" />
@@ -1908,8 +1908,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         </message>
         <message>
             <location filename="../src/components/plugins/QvPluginHost.cpp" line="130" />
-            <source>The plugin will become fully functional after restarting Plumbum.</source>
-            <translation>重新启动 Plumbum 后插件将完全启用。</translation>
+            <source>The plugin will become fully functional after restarting Qplumbum.</source>
+            <translation>重新启动 Qplumbum 后插件将完全启用。</translation>
         </message>
     </context>
     <context>
@@ -2026,8 +2026,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
         </message>
         <message>
             <location filename="../src/core/kernel/V2RayKernelInteractions.cpp" line="38" />
-            <source>Plumbum tried to set, but failed because permission denied.</source>
-            <translation>Plumbum 尝试设置，但由于权限不足而失败。</translation>
+            <source>Qplumbum tried to set, but failed because permission denied.</source>
+            <translation>Qplumbum 尝试设置，但由于权限不足而失败。</translation>
         </message>
         <message>
             <location filename="../src/core/kernel/V2RayKernelInteractions.cpp" line="57" />
@@ -2331,9 +2331,9 @@ Maybe you have downloaded the wrong core?</source>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.ui" line="384" />
-            <source>These settings are used by Plumbum itself.
+            <source>These settings are used by Qplumbum itself.
 For example, for updating subscriptions.</source>
-            <translation>这些设定是针对 Plumbum 本身的。
+            <translation>这些设定是针对 Qplumbum 本身的。
 例如，用在更新订阅时。</translation>
         </message>
         <message>
@@ -2358,8 +2358,8 @@ For example, for updating subscriptions.</source>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.ui" line="484" />
-            <source>Plumbum Proxy</source>
-            <translation>Plumbum 代理</translation>
+            <source>Qplumbum Proxy</source>
+            <translation>Qplumbum 代理</translation>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.ui" line="508" />
@@ -2455,8 +2455,8 @@ Custom DNS Settings</source>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.ui" line="947" />
-            <source>Plumbum will allocate ports, for HTTP and SOCKS respectively, if enabled, for each kernel plugin.</source>
-            <translation>如果启用，Plumbum 将为每个内核插件分配端口，分别用于 HTTP 和 SOCKS。</translation>
+            <source>Qplumbum will allocate ports, for HTTP and SOCKS respectively, if enabled, for each kernel plugin.</source>
+            <translation>如果启用，Qplumbum 将为每个内核插件分配端口，分别用于 HTTP 和 SOCKS。</translation>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.ui" line="957" />
@@ -2667,8 +2667,8 @@ Custom DNS Settings</source>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.ui" line="2222" />
-            <source>Plumbum</source>
-            <translation>Plumbum</translation>
+            <source>Qplumbum</source>
+            <translation>Qplumbum</translation>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.ui" line="2239" />
@@ -2847,11 +2847,11 @@ But could damage your server if improperly used.</source>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.cpp" line="762" />
-            <source>You may be about to set V2Ray core incorrectly to Plumbum itself, which is absolutely not correct.<byte value="xd" />
-This won't trigger a fork bomb, however, since Plumbum works in singleton mode.<byte value="xd" />
+            <source>You may be about to set V2Ray core incorrectly to Qplumbum itself, which is absolutely not correct.<byte value="xd" />
+This won't trigger a fork bomb, however, since Qplumbum works in singleton mode.<byte value="xd" />
 If your V2Ray core filename happened to be 'plumbum'-something, you are totally free to ignore this warning.</source>
-            <translation>您或许要将 V2Ray 的可执行文件错误地设置成 Plumbum 本身了，这是非常不对的。
-然而，这样做并不会触发 Fork 炸弹，因为 Plumbum 以单例模式工作。
+            <translation>您或许要将 V2Ray 的可执行文件错误地设置成 Qplumbum 本身了，这是非常不对的。
+然而，这样做并不会触发 Fork 炸弹，因为 Qplumbum 以单例模式工作。
 若你的 V2Ray 核心文件名恰好是 'plumbum' 什么的，你完全可以忽略这个警告。</translation>
         </message>
         <message>
@@ -3109,8 +3109,8 @@ V2Ray 核心可执行文件的文件名通常是 'v2ray' 或者 'v2ray.exe'。�
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.cpp" line="1162" />
-            <source>Plumbum was not built with NTP support.</source>
-            <translation>Plumbum 构建时未开启 NTP 支持选项。</translation>
+            <source>Qplumbum was not built with NTP support.</source>
+            <translation>Qplumbum 构建时未开启 NTP 支持选项。</translation>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.ui" line="1312" />
@@ -3161,9 +3161,9 @@ V2Ray 核心可执行文件的文件名通常是 'v2ray' 或者 'v2ray.exe'。�
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.ui" line="636" />
             <source>Run TCPing or ICMPing periodically after connecting to a server.
-Plumbum will give a more accurate latency value if Enabled, but makes it easy to fingerprint the connection.</source>
+Qplumbum will give a more accurate latency value if Enabled, but makes it easy to fingerprint the connection.</source>
             <translation>连接到服务器后定期运行TCPing 或 ICMPing。
-如果启用，Plumbum 会给出更准确的延迟值，但是它很容易指纹连接。</translation>
+如果启用，Qplumbum 会给出更准确的延迟值，但是它很容易指纹连接。</translation>
         </message>
         <message>
             <location filename="../src/ui/widgets/windows/w_PreferencesWindow.ui" line="1188" />
@@ -3239,13 +3239,13 @@ This option may be useful for some desktop environments without tray support.</s
         </message>
         <message>
             <location filename="../src/ui/PlumbumPlatformApplication.cpp" line="185" />
-            <source>Exit Plumbum</source>
-            <translation>退出 Plumbum</translation>
+            <source>Exit Qplumbum</source>
+            <translation>退出 Qplumbum</translation>
         </message>
         <message>
             <location filename="../src/ui/PlumbumPlatformApplication.cpp" line="187" />
-            <source>Plumbum - A cross-platform Qt frontend for V2Ray.</source>
-            <translation>Plumbum - 跨平台的 V2Ray Qt 前端。</translation>
+            <source>Qplumbum - A cross-platform Qt frontend for V2Ray.</source>
+            <translation>Qplumbum - 跨平台的 V2Ray Qt 前端。</translation>
         </message>
         <message>
             <location filename="../src/components/latency/DNSBase.hpp" line="49" />
@@ -3531,8 +3531,8 @@ This option may be useful for some desktop environments without tray support.</s
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="180" />
-            <source>Cannot Start Plumbum</source>
-            <translation>无法启动 Plumbum</translation>
+            <source>Cannot Start Qplumbum</source>
+            <translation>无法启动 Qplumbum</translation>
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="181" />
@@ -3541,8 +3541,8 @@ This option may be useful for some desktop environments without tray support.</s
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="182" />
-            <source>Plumbum has searched these paths below:</source>
-            <translation>Plumbum 搜索了以下路径：</translation>
+            <source>Qplumbum has searched these paths below:</source>
+            <translation>Qplumbum 搜索了以下路径：</translation>
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="184" />
@@ -3553,13 +3553,13 @@ This option may be useful for some desktop environments without tray support.</s
             <location filename="../src/core/settings/SettingsBackend.cpp" line="185" />
             <location filename="../src/core/settings/SettingsBackend.cpp" line="210" />
             <location filename="../src/core/settings/SettingsBackend.cpp" line="250" />
-            <source>Plumbum will now exit.</source>
-            <translation>Plumbum 现在将退出。</translation>
+            <source>Qplumbum will now exit.</source>
+            <translation>Qplumbum 现在将退出。</translation>
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="205" />
-            <source>Failed to initialise Plumbum</source>
-            <translation>初始化 Plumbum 失败</translation>
+            <source>Failed to initialise Qplumbum</source>
+            <translation>初始化 Qplumbum 失败</translation>
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="206" />
@@ -3568,13 +3568,13 @@ This option may be useful for some desktop environments without tray support.</s
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="207" />
-            <source>Plumbum has found a config file, but it failed to be loaded due to some errors.</source>
-            <translation>Plumbum 找到了一个配置文件，但由于一些错误未能加载。</translation>
+            <source>Qplumbum has found a config file, but it failed to be loaded due to some errors.</source>
+            <translation>Qplumbum 找到了一个配置文件，但由于一些错误未能加载。</translation>
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="208" />
-            <source>A workaround is to remove the this file and restart Plumbum:</source>
-            <translation>解决方案是移除此文件并重新启动 Plumbum:</translation>
+            <source>A workaround is to remove the this file and restart Qplumbum:</source>
+            <translation>解决方案是移除此文件并重新启动 Qplumbum:</translation>
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="211" />
@@ -3583,13 +3583,13 @@ This option may be useful for some desktop environments without tray support.</s
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="246" />
-            <source>Plumbum Cannot Continue</source>
-            <translation>Plumbum 无法继续</translation>
+            <source>Qplumbum Cannot Continue</source>
+            <translation>Qplumbum 无法继续</translation>
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="247" />
-            <source>You are running a lower version of Plumbum compared to the current config file.</source>
-            <translation>与当前配置文件相比，您正在运行一个较低版本的 Plumbum。</translation>
+            <source>You are running a lower version of Qplumbum compared to the current config file.</source>
+            <translation>与当前配置文件相比，您正在运行一个较低版本的 Qplumbum。</translation>
         </message>
         <message>
             <location filename="../src/core/settings/SettingsBackend.cpp" line="248" />
@@ -3638,13 +3638,13 @@ This option may be useful for some desktop environments without tray support.</s
         </message>
         <message>
             <location filename="../src/core/settings/SettingsUpgrade.cpp" line="427" />
-            <source>Please upgrade firstly up to Plumbum v2.0/v2.1 and try again.</source>
-            <translation>请先升级到 Plumbum v2.0/v2.1 然后重试。</translation>
+            <source>Please upgrade firstly up to Qplumbum v2.0/v2.1 and try again.</source>
+            <translation>请先升级到 Qplumbum v2.0/v2.1 然后重试。</translation>
         </message>
         <message>
             <location filename="../src/main.cpp" line="168" />
-            <source>Plumbum has encountered an uncaught exception: </source>
-            <translation>Plumbum 遇到未知异常： </translation>
+            <source>Qplumbum has encountered an uncaught exception: </source>
+            <translation>Qplumbum 遇到未知异常： </translation>
         </message>
         <message>
             <location filename="../src/main.cpp" line="169" />
@@ -4346,8 +4346,8 @@ This option may be useful for some desktop environments without tray support.</s
         </message>
         <message>
             <location filename="../src/ui/qml/forms/SettingsPage.qml" line="255" />
-            <source>⚠ TUN requires root privileges or CAP_NET_ADMIN. Please run Plumbum with sudo or grant the capability: sudo setcap cap_net_admin,cap_net_raw+eip $(which xray)</source>
-            <translation>⚠ TUN 需要 root 权限或 CAP_NET_ADMIN。请使用 sudo 运行 Plumbum 或授予内核能力: sudo setcap cap_net_admin,cap_net_raw+eip $(which xray)</translation>
+            <source>⚠ TUN requires root privileges or CAP_NET_ADMIN. Please run Qplumbum with sudo or grant the capability: sudo setcap cap_net_admin,cap_net_raw+eip $(which xray)</source>
+            <translation>⚠ TUN 需要 root 权限或 CAP_NET_ADMIN。请使用 sudo 运行 Qplumbum 或授予内核能力: sudo setcap cap_net_admin,cap_net_raw+eip $(which xray)</translation>
         </message>
         <message>
             <location filename="../src/ui/qml/forms/SettingsPage.qml" line="269" />

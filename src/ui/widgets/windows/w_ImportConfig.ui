@@ -113,7 +113,7 @@
          <item>
           <widget class="QCheckBox" name="hidePlumbumCB">
            <property name="text">
-            <string>Hide Plumbum</string>
+            <string>Hide Qplumbum</string>
            </property>
           </widget>
          </item>

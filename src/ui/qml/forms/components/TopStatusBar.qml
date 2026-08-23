@@ -20,9 +20,6 @@ Rectangle {
         ColumnLayout {
             id: pacCol
             spacing: 2
-            Layout.preferredWidth: 210
-            Layout.minimumWidth: 205
-
             RowLayout {
                 spacing: 4
                 Layout.alignment: Qt.AlignHCenter
@@ -54,6 +51,7 @@ Rectangle {
             }
 
             RowLayout {
+                id: pacButtonsRow
                 spacing: 2
                 Layout.alignment: Qt.AlignHCenter
 
@@ -82,13 +80,18 @@ Rectangle {
                     onClicked: plumbum.pacMode = 2
                 }
             }
+
+            // Let translated button labels determine the required width so the
+            // connection column never overlaps the PAC selector.
+            Layout.preferredWidth: pacButtonsRow.implicitWidth
+            Layout.minimumWidth: pacButtonsRow.implicitWidth
         }
 
         // Connection name
         ColumnLayout {
             id: connNameCol
             Layout.fillWidth: true
-            Layout.minimumWidth: 120
+            Layout.minimumWidth: 0
             Layout.preferredWidth: 180
             Layout.maximumWidth: 300
             spacing: 1
@@ -99,6 +102,9 @@ Rectangle {
                       : qsTr("No active connection")
                 font.pixelSize: 10
                 color: window.cTextDim
+                Layout.fillWidth: true
+                Layout.minimumWidth: 0
+                elide: Text.ElideRight
             }
             Text {
                 text: plumbum.connected ? plumbum.connectedName : "—"
@@ -123,8 +129,11 @@ Rectangle {
         // Speed widget
         Rectangle {
             id: speedBox
-            Layout.preferredWidth: 220
-            Layout.minimumWidth: 210
+            // Reserve space for the widest normal formatted values.  Using only
+            // preferredWidth on GridLayout children lets long values resize the
+            // columns and makes the other row shift as traffic changes.
+            Layout.preferredWidth: 260
+            Layout.minimumWidth: 260
             Layout.preferredHeight: 46
             radius: 8
             color: window.cSurfaceAlt
@@ -132,8 +141,8 @@ Rectangle {
 
             GridLayout {
                 anchors.fill: parent
-                anchors.leftMargin: 14
-                anchors.rightMargin: 16
+                anchors.leftMargin: 10
+                anchors.rightMargin: 10
                 anchors.topMargin: 8
                 anchors.bottomMargin: 8
                 columns: 4
@@ -148,6 +157,8 @@ Rectangle {
                     font.bold: true
                     color: window.cGreen
                     Layout.preferredWidth: 14
+                    Layout.minimumWidth: 14
+                    Layout.maximumWidth: 14
                     horizontalAlignment: Text.AlignRight
                 }
                 // Col 2: speed (fixed width, right-aligned, monospace)
@@ -157,16 +168,24 @@ Rectangle {
                     font.bold: true
                     font.family: "monospace"
                     color: window.cText
-                    Layout.preferredWidth: 60
+                    Layout.preferredWidth: 86
+                    Layout.minimumWidth: 86
+                    Layout.maximumWidth: 86
                     horizontalAlignment: Text.AlignRight
+                    elide: Text.ElideLeft
+                    clip: true
                 }
                 // Col 3: total label (fixed, right-aligned)
                 Text {
                     text: qsTr("Total ↑")
                     font.pixelSize: 9
                     color: window.cTextDim
-                    Layout.preferredWidth: 34
+                    Layout.preferredWidth: 44
+                    Layout.minimumWidth: 44
+                    Layout.maximumWidth: 44
                     horizontalAlignment: Text.AlignRight
+                    elide: Text.ElideRight
+                    clip: true
                 }
                 // Col 4: total value (fixed, right-aligned, monospace)
                 Text {
@@ -174,8 +193,12 @@ Rectangle {
                     font.pixelSize: 10
                     font.family: "monospace"
                     color: window.cTextDim
-                    Layout.preferredWidth: 60
+                    Layout.preferredWidth: 70
+                    Layout.minimumWidth: 70
+                    Layout.maximumWidth: 70
                     horizontalAlignment: Text.AlignRight
+                    elide: Text.ElideLeft
+                    clip: true
                 }
 
                 // ---- Row 2: download ----
@@ -185,6 +208,8 @@ Rectangle {
                     font.bold: true
                     color: window.cPrimaryAlt
                     Layout.preferredWidth: 14
+                    Layout.minimumWidth: 14
+                    Layout.maximumWidth: 14
                     horizontalAlignment: Text.AlignRight
                 }
                 Text {
@@ -193,23 +218,35 @@ Rectangle {
                     font.bold: true
                     font.family: "monospace"
                     color: window.cText
-                    Layout.preferredWidth: 60
+                    Layout.preferredWidth: 86
+                    Layout.minimumWidth: 86
+                    Layout.maximumWidth: 86
                     horizontalAlignment: Text.AlignRight
+                    elide: Text.ElideLeft
+                    clip: true
                 }
                 Text {
                     text: qsTr("Total ↓")
                     font.pixelSize: 9
                     color: window.cTextDim
-                    Layout.preferredWidth: 34
+                    Layout.preferredWidth: 44
+                    Layout.minimumWidth: 44
+                    Layout.maximumWidth: 44
                     horizontalAlignment: Text.AlignRight
+                    elide: Text.ElideRight
+                    clip: true
                 }
                 Text {
                     text: plumbum.downTotalText || "0 B"
                     font.pixelSize: 10
                     font.family: "monospace"
                     color: window.cTextDim
-                    Layout.preferredWidth: 60
+                    Layout.preferredWidth: 70
+                    Layout.minimumWidth: 70
+                    Layout.maximumWidth: 70
                     horizontalAlignment: Text.AlignRight
+                    elide: Text.ElideLeft
+                    clip: true
                 }
             }
         }

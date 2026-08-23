@@ -109,7 +109,9 @@ Rectangle {
                     address: model.address
                     port: model.port
                     latencyText: model.latencyText
-                    isConnected: model.isConnected
+                    // Use the single connection state exposed by the property
+                    // bridge so the card and the top status bar cannot diverge.
+                    isConnected: plumbum.connected && plumbum.connectedConnectionId === model.connectionId
                     upTotal: model.upTotal
                     downTotal: model.downTotal
 

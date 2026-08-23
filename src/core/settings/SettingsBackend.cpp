@@ -172,13 +172,13 @@ namespace Plumbum::core::config
                 // None of the path above can be used as a dir for storing config.
                 // Even the last folder failed to pass the check.
                 LOG("FATAL");
-                LOG(" ---> CANNOT find a proper place to store Plumbum config files.");
-                QvMessageBoxWarn(nullptr, QObject::tr("Cannot Start Plumbum"),
+                LOG(" ---> CANNOT find a proper place to store Qplumbum config files.");
+                QvMessageBoxWarn(nullptr, QObject::tr("Cannot Start Qplumbum"),
                                  QObject::tr("Cannot find a place to store config files.") + NEWLINE +                                          //
-                                     QObject::tr("Plumbum has searched these paths below:") + NEWLINE + NEWLINE +                                //
+                                     QObject::tr("Qplumbum has searched these paths below:") + NEWLINE + NEWLINE +                                //
                                      configFilePaths.join(NEWLINE) + NEWLINE +                                                                  //
                                      QObject::tr("It usually means you don't have the write permission to all of those locations.") + NEWLINE + //
-                                     QObject::tr("Plumbum will now exit."));                                                                     //
+                                     QObject::tr("Qplumbum will now exit."));                                                                     //
                 return false;
             }
 
@@ -197,13 +197,13 @@ namespace Plumbum::core::config
                 //
                 // Otherwise Plumbum would have loaded this config already instead of notifying to create a new config in this folder.
                 //
-                LOG("This should not occur: Plumbum config exists but failed to load.");
-                QvMessageBoxWarn(nullptr, QObject::tr("Failed to initialise Plumbum"),
+                LOG("This should not occur: Qplumbum config exists but failed to load.");
+                QvMessageBoxWarn(nullptr, QObject::tr("Failed to initialise Qplumbum"),
                                  QObject::tr("Failed to determine the location of config file:") + NEWLINE +                                   //
-                                     QObject::tr("Plumbum has found a config file, but it failed to be loaded due to some errors.") + NEWLINE + //
-                                     QObject::tr("A workaround is to remove the this file and restart Plumbum:") + NEWLINE +                    //
+                                     QObject::tr("Qplumbum has found a config file, but it failed to be loaded due to some errors.") + NEWLINE + //
+                                     QObject::tr("A workaround is to remove the this file and restart Qplumbum:") + NEWLINE +                    //
                                      PLUMBUM_CONFIG_FILE + NEWLINE +                                                                            //
-                                     QObject::tr("Plumbum will now exit.") + NEWLINE +                                                          //
+                                     QObject::tr("Qplumbum will now exit.") + NEWLINE +                                                          //
                                      QObject::tr("Please report if you think it's a bug."));                                                   //
                 return false;
             }
@@ -239,11 +239,11 @@ namespace Plumbum::core::config
             {
                 // Config version is larger than the current version...
                 // This is rare but it may happen....
-                QvMessageBoxWarn(nullptr, QObject::tr("Plumbum Cannot Continue"),                                                           //
-                                 QObject::tr("You are running a lower version of Plumbum compared to the current config file.") + NEWLINE + //
+                QvMessageBoxWarn(nullptr, QObject::tr("Qplumbum Cannot Continue"),                                                           //
+                                 QObject::tr("You are running a lower version of Qplumbum compared to the current config file.") + NEWLINE + //
                                      QObject::tr("Please check if there's an issue explaining about it.") + NEWLINE +                      //
                                      QObject::tr("Or submit a new issue if you think this is an error.") + NEWLINE + NEWLINE +             //
-                                     QObject::tr("Plumbum will now exit."));
+                                     QObject::tr("Qplumbum will now exit."));
                 return false;
             }
             else if (configVersion < PLUMBUM_CONFIG_VERSION)

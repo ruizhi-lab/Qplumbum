@@ -34,7 +34,7 @@ namespace Plumbum::core::kernel
             {
                 DEBUG("Failed to enable executable permission.");
                 const auto message = tr("Core file is lacking executable permission for the current user.") +
-                                     tr("Plumbum tried to set, but failed because permission denied.");
+                                     tr("Qplumbum tried to set, but failed because permission denied.");
                 return { false, message };
             }
             else

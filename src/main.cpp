@@ -109,7 +109,7 @@ void signalHandler(int signum)
         exit(-99);
         return;
     }
-    std::cout << "Plumbum: Interrupt signal (" << signum << ") received." << std::endl;
+    std::cout << "Qplumbum: Interrupt signal (" << signum << ") received." << std::endl;
 
     if (signum == SIGTERM)
     {
@@ -127,7 +127,7 @@ void signalHandler(int signum)
         const auto filePath = PLUMBUM_CONFIG_DIR + "bugreport/QvBugReport_" + QSTRN(system_clock::to_time_t(system_clock::now())) + ".stacktrace";
         StringToFile(msg, filePath);
         std::cout << "Backtrace saved in: " + filePath.toStdString() << std::endl;
-        const auto message = QObject::tr("Plumbum has encountered an uncaught exception: ") + NEWLINE +              //
+        const auto message = QObject::tr("Qplumbum has encountered an uncaught exception: ") + NEWLINE +              //
                              QObject::tr("Please report a bug via Github with the file located here: ") + NEWLINE + //
                              NEWLINE + filePath;
         BootstrapMessageBox("UNCAUGHT EXCEPTION", message);
@@ -162,7 +162,7 @@ int main(int argc, char *argv[])
 #endif
 
 #ifdef PLUMBUM_GUI
-    QApplication::setApplicationDisplayName("Plumbum");
+    QApplication::setApplicationDisplayName("Qplumbum");
 #endif
 
 #ifdef QT_DEBUG
@@ -186,7 +186,7 @@ int main(int argc, char *argv[])
     PlumbumApplication app(argc, argv);
     if (const auto list = app.CheckPrerequisites(); !list.isEmpty())
     {
-        BootstrapMessageBox("Plumbum Prerequisites Check Failed", list.join(NEWLINE));
+        BootstrapMessageBox("Qplumbum Prerequisites Check Failed", list.join(NEWLINE));
         return PlumbumExitReason::EXIT_PRECONDITION_FAILED;
     }
 
@@ -195,8 +195,8 @@ int main(int argc, char *argv[])
         const auto reason = app.GetExitReason();
         if (reason == EXIT_INITIALIZATION_FAILED)
         {
-            BootstrapMessageBox("Plumbum Initialization Failed", "PreInitialization Failed." NEWLINE "For more information, please see the log.");
-            LOG("Plumbum initialization failed:", reason);
+            BootstrapMessageBox("Qplumbum Initialization Failed", "PreInitialization Failed." NEWLINE "For more information, please see the log.");
+            LOG("Qplumbum initialization failed:", reason);
         }
         return reason;
     }
@@ -208,7 +208,7 @@ int main(int argc, char *argv[])
     const auto reason = app.GetExitReason();
     if (reason == EXIT_NEW_VERSION_TRIGGER)
     {
-        LOG("Starting new version of Plumbum: " + app.StartupArguments._qvNewVersionPath);
+        LOG("Starting new version of Qplumbum: " + app.StartupArguments._qvNewVersionPath);
         QProcess::startDetached(app.StartupArguments._qvNewVersionPath, {});
     }
     return reason;

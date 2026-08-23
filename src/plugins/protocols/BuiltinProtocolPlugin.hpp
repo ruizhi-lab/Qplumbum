@@ -20,11 +20,11 @@ class InternalProtocolSupportPlugin
     const QvPluginMetadata GetMetadata() const override
     {
         return { "Builtin Protocol Support",                                                  //
-                 "Plumbum Core Workgroup",                                                     //
+                 "Qplumbum Core Workgroup",                                                     //
                  "qvplugin_builtin_protocol",                                                 //
                  "VMess, VLESS, SOCKS, HTTP, Shadowsocks, DNS, Dokodemo-door editor support", //
                  PLUMBUM_VERSION_STRING,                                                       //
-                 "Plumbum/Plumbum",                                                             //
+                 "ruizhi-lab/Qplumbum",                                                         //
                  {
                      COMPONENT_OUTBOUND_HANDLER, //
                      COMPONENT_GUI               //

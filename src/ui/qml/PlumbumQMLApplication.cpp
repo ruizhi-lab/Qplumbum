@@ -134,7 +134,7 @@ void PlumbumQMLApplication::setupTrayIcon()
     trayIcon = new QSystemTrayIcon(QIcon(trayBasePixmap), this);
     trayAnimationTimer.setInterval(80);
     connect(&trayAnimationTimer, &QTimer::timeout, this, &PlumbumQMLApplication::animateTrayIcon);
-    trayIcon->setToolTip(QStringLiteral("Plumbum - Xray/V2Ray Client"));
+    trayIcon->setToolTip(QStringLiteral("Qplumbum - Xray/V2Ray Client"));
     LOG("Tray icon loaded: " + QString::number(!trayIcon->icon().isNull()) + ", tray available: " + QString::number(QSystemTrayIcon::isSystemTrayAvailable()));
 
     trayMenu = new QMenu();
@@ -165,7 +165,7 @@ void PlumbumQMLApplication::setupTrayIcon()
             {
                 const auto name = ConnectionManager->GetConnectionMetaObject(id.connectionId).displayName;
                 trayConnInfoAction->setText(QObject::tr("Connected: %1").arg(name));
-                trayIcon->setToolTip(QObject::tr("Plumbum - %1").arg(name));
+                trayIcon->setToolTip(QObject::tr("Qplumbum - %1").arg(name));
                 setTrayAnimationEnabled(true);
             }
             trayConnectAction->setEnabled(false);
@@ -173,7 +173,7 @@ void PlumbumQMLApplication::setupTrayIcon()
         });
         connect(ConnectionManager, &QvConfigHandler::OnDisconnected, this, [this](const ConnectionGroupPair &) {
             trayConnInfoAction->setText(QObject::tr("Not Connected"));
-            trayIcon->setToolTip(QStringLiteral("Plumbum - Xray/V2Ray Client"));
+            trayIcon->setToolTip(QStringLiteral("Qplumbum - Xray/V2Ray Client"));
             trayConnectAction->setEnabled(true);
             trayDisconnectAction->setEnabled(false);
             setTrayAnimationEnabled(false);

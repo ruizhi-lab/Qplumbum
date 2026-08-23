@@ -71,7 +71,7 @@ namespace Plumbum::components::plugins
                     QvMessageBoxWarn(nullptr, tr("Cannot load plugin"),
                                      tr("The plugin cannot be loaded: ") + NEWLINE + info.libraryPath + NEWLINE NEWLINE +
                                          tr("This plugin was built against a different version of the Plugin Interface.") + NEWLINE +
-                                         tr("Please contact the plugin provider or report the issue to Plumbum Workgroup."));
+                                         tr("Please contact the plugin provider or report the issue to Qplumbum Workgroup."));
                     info.pluginLoader->unload();
                     continue;
                 }
@@ -127,7 +127,7 @@ namespace Plumbum::components::plugins
         {
             // Load plugin if it haven't been loaded.
             initializePlugin(internalName);
-            QvMessageBoxInfo(nullptr, tr("Enabling a plugin"), tr("The plugin will become fully functional after restarting Plumbum."));
+            QvMessageBoxInfo(nullptr, tr("Enabling a plugin"), tr("The plugin will become fully functional after restarting Qplumbum."));
         }
     }
 

@@ -1148,15 +1148,14 @@ void PlumbumQMLProperty::onStatsAvailable(const ConnectionGroupPair &id, const Q
 {
     if (!_connected || !(id == _connectedPair))
         return;
-    qvspeed upSpeed = 0, downSpeed = 0;
-    qvdata upTotal = 0, downTotal = 0;
-    for (const auto &[type, d] : data.toStdMap())
-    {
-        upSpeed += d.first.first;
-        downSpeed += d.first.second;
-        upTotal += d.second.first;
-        downTotal += d.second.second;
-    }
+    // Inbound and outbound counters describe the same traffic at different
+    // points in the pipeline. Use the configured view, as the QWidget UI does,
+    // instead of adding all counter types and double-counting traffic.
+    const auto stats = data.value(CurrentStatAPIType);
+    const auto upSpeed = stats.first.first;
+    const auto downSpeed = stats.first.second;
+    const auto upTotal = stats.second.first;
+    const auto downTotal = stats.second.second;
     _upSpeedText = FormatBytes(upSpeed) + "/s";
     _downSpeedText = FormatBytes(downSpeed) + "/s";
     _upTotalText = FormatBytes(upTotal);

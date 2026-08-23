@@ -1,6 +1,6 @@
-# Contributing Plumbum
+# Contributing to Qplumbum
 
-Let's make Plumbum great
+Let's make Qplumbum great
 
 ## Branches
 

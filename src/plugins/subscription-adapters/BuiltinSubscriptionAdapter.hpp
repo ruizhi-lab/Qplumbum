@@ -20,11 +20,11 @@ class InternalSubscriptionSupportPlugin
     const QvPluginMetadata GetMetadata() const override
     {
         return { "Builtin Subscription Support",          //
-                 "Plumbum Core Workgroup",                 //
+                 "Qplumbum Core Workgroup",                 //
                  "builtin_subscription_support",          //
-                 "Basic subscription support for Plumbum", //
+                 "Basic subscription support for Qplumbum", //
                  PLUMBUM_VERSION_STRING,                   //
-                 "Plumbum/Plumbum",                         //
+                 "ruizhi-lab/Qplumbum",                     //
                  { COMPONENT_SUBSCRIPTION_ADAPTER },
                  UPDATE_NONE };
     }

@@ -1,11 +1,11 @@
 # Contributor Covenant Code of Conduct
 
-Plumbum can ONLY be used for learning related technologies such as
+Qplumbum can ONLY be used for learning related technologies such as
 Qt/C++/Linux/CI/automation and use within the scope permitted by law.
-Any individual or group MAY NOT use Plumbum for any violation of relevant laws
+Any individual or group MAY NOT use Qplumbum for any violation of relevant laws
 and regulations.
 
-By contributing to Plumbum, include but not limit to code, any assets, documentations, 
+By contributing to Qplumbum, include but not limit to code, any assets, documentations,
 translations, plugins, you are sure your content is NOT made for a specific use.
 
 ## Our Pledge

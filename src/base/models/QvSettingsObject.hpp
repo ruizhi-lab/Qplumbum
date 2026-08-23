@@ -148,7 +148,7 @@ namespace Plumbum::base::config
         QString address = "127.0.0.1";
         QString type = "http";
         int port = 8000;
-        QString userAgent = "Plumbum/$VERSION WebRequestHelper";
+        QString userAgent = "Qplumbum/$VERSION WebRequestHelper";
         JSONSTRUCT_COMPARE(PlumbumConfig_Network, latencyTestingMethod, latencyRealPingTestURL, proxyType, type, address, port, userAgent)
         JSONSTRUCT_REGISTER(PlumbumConfig_Network, F(latencyTestingMethod, latencyRealPingTestURL, proxyType, type, address, port, userAgent))
     };

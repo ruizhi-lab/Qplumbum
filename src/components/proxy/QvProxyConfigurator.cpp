@@ -25,12 +25,12 @@ namespace Plumbum::components::proxy
 
         if (hasHTTP)
         {
-            LOG("Plumbum will set system proxy to use HTTP");
+            LOG("Qplumbum will set system proxy to use HTTP");
         }
 
         if (hasSOCKS)
         {
-            LOG("Plumbum will set system proxy to use SOCKS");
+            LOG("Qplumbum will set system proxy to use SOCKS");
         }
         QList<ProcessArgument> actions;
         actions << ProcessArgument{ "gsettings", { "set", "org.gnome.system.proxy", "mode", "manual" } };

@@ -759,8 +759,8 @@ void PreferencesWindow::on_checkVCoreSettings_clicked()
     // prevent some bullshit situations.
     if (const auto vCorePathSmallCased = vcorePath.toLower(); vCorePathSmallCased.endsWith("plumbum") || vCorePathSmallCased.endsWith("plumbum.exe"))
     {
-        const auto content = tr("You may be about to set V2Ray core incorrectly to Plumbum itself, which is absolutely not correct.\r\n"
-                                "This won't trigger a fork bomb, however, since Plumbum works in singleton mode.\r\n"
+        const auto content = tr("You may be about to set V2Ray core incorrectly to Qplumbum itself, which is absolutely not correct.\r\n"
+                                "This won't trigger a fork bomb, however, since Qplumbum works in singleton mode.\r\n"
                                 "If your V2Ray core filename happened to be 'plumbum'-something, you are totally free to ignore this warning.");
         QvMessageBoxWarn(this, tr("Watch Out!"), content);
     }
@@ -1159,7 +1159,7 @@ void PreferencesWindow::on_pushButton_clicked()
     else
         QvMessageBoxWarn(this, ntpTitle, tr("Failed to lookup server: %1").arg(hostInfo.errorString()));
 #else
-    QvMessageBoxWarn(this, tr("No NTP Backend"), tr("Plumbum was not built with NTP support."));
+        QvMessageBoxWarn(this, tr("No NTP Backend"), tr("Qplumbum was not built with NTP support."));
 #endif
 }
 

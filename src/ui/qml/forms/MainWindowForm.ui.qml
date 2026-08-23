@@ -27,7 +27,7 @@ Item {
 
             Text {
                 id: element1
-                text: qsTr("Plumbum")
+                text: qsTr("Qplumbum")
                 font.pixelSize: frame.width / 15
             }
         }
@@ -60,4 +60,3 @@ Designer {
     D{i:0;autoSize:true;formeditorZoom:0.75;height:480;width:640}
 }
 ##^##*/
-

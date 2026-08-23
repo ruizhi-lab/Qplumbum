@@ -11,7 +11,7 @@ ApplicationWindow {
     minimumWidth: 860
     minimumHeight: 560
     visible: true
-    title: qsTr("Plumbum - Xray/V2Ray Client")
+    title: qsTr("Qplumbum - Xray/V2Ray Client")
 
     // Hide to tray instead of quitting on close.
     onClosing: {
@@ -84,7 +84,7 @@ ApplicationWindow {
                         ColumnLayout {
                             spacing: 1
                             Text {
-                                text: "Plumbum"
+                                text: "Qplumbum"
                                 font.pixelSize: 18
                                 font.bold: true
                                 color: cText

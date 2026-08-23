@@ -8,8 +8,8 @@
 
 const inline QMap<int, QString> UpdateChannelLink //
     {
-        { 0, "https://api.github.com/repos/Plumbum/Plumbum/releases/latest" },    //
-        { 1, "https://api.github.com/repos/Plumbum/Plumbum/releases?per_page=1" } //
+        { 0, "https://api.github.com/repos/ruizhi-lab/Qplumbum/releases/latest" },    //
+        { 1, "https://api.github.com/repos/ruizhi-lab/Qplumbum/releases?per_page=1" } //
     };
 #define QV_MODULE_NAME "Update"
 
@@ -75,12 +75,12 @@ namespace Plumbum::components
             }
             const auto link = root["html_url"].toString("");
             const auto versionMessage =
-                QString("A new version of Plumbum has been found:" NEWLINE "v%1" NEWLINE NEWLINE "%2" NEWLINE "------------" NEWLINE "%3")
+                QString("A new version of Qplumbum has been found:" NEWLINE "v%1" NEWLINE NEWLINE "%2" NEWLINE "------------" NEWLINE "%3")
                     .arg(newVersionStr)
                     .arg(name)
                     .arg(root["body"].toString());
 
-            const auto result = QvMessageBoxAsk(nullptr, tr("Plumbum Update"), versionMessage, { Yes, No, Ignore });
+            const auto result = QvMessageBoxAsk(nullptr, tr("Qplumbum Update"), versionMessage, { Yes, No, Ignore });
             if (result == Yes)
             {
                 QvCoreApplication->OpenURL(link);

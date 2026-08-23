@@ -3,7 +3,7 @@ Version:        1.0.0
 Release:        1%{?dist}
 Summary:        Linux Qt 6 GUI client for Xray and V2Ray
 License:        GPL-3.0-or-later
-URL:            https://github.com/ruizhi-lab/Plumbum
+URL:            https://github.com/ruizhi-lab/Qplumbum
 Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
@@ -21,7 +21,7 @@ BuildRequires:  libcurl-devel
 BuildRequires:  openssl-devel
 
 %description
-Plumbum is a modern Linux Qt 6 GUI client for Xray and V2Ray compatible
+Qplumbum is a modern Linux Qt 6 GUI client for Xray and V2Ray compatible
 protocols, including VMess, VLESS, Trojan and Shadowsocks.
 
 %prep
@@ -45,5 +45,5 @@ protocols, including VMess, VLESS, Trojan and Shadowsocks.
 /usr/share/icons/hicolor/*/apps/plumbum.*
 
 %changelog
-* Thu Jan 01 2026 Plumbum contributors - 1.0.0-1
+* Thu Jan 01 2026 Qplumbum contributors - 1.0.0-1
 - Initial Qt 6 Linux package

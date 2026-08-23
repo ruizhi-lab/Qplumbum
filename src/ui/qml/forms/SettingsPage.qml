@@ -717,7 +717,7 @@ Rectangle {
                     spacing: 6
 
                     Text {
-                        text: "⚡ Plumbum"
+                        text: "⚡ Qplumbum"
                         font.pixelSize: 16
                         font.bold: true
                         color: window.cText

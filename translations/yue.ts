@@ -526,8 +526,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
       <translation>截圖</translation>
     </message>
     <message>
-      <source>Hide Plumbum</source>
-      <translation>藏起Plumbum</translation>
+      <source>Hide Qplumbum</source>
+      <translation>藏起Qplumbum</translation>
     </message>
     <message>
       <source> secs</source>
@@ -789,8 +789,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
   <context>
     <name>MainWindow</name>
     <message>
-      <source>Plumbum</source>
-      <translation type="unfinished">Plumbum</translation>
+      <source>Qplumbum</source>
+      <translation type="unfinished">Qplumbum</translation>
     </message>
     <message>
       <source>Preferences</source>
@@ -977,8 +977,8 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
       <translation type="unfinished">By data, Descending</translation>
     </message>
     <message>
-      <source>Switch to Plumbum log</source>
-      <translation type="unfinished">Switch to Plumbum log</translation>
+      <source>Switch to Qplumbum log</source>
+      <translation type="unfinished">Switch to Qplumbum log</translation>
     </message>
     <message>
       <source>Kernel terminated.</source>
@@ -997,12 +997,12 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
       <translation type="unfinished">Show</translation>
     </message>
     <message>
-      <source>Quit Plumbum</source>
-      <translation type="unfinished">Quit Plumbum</translation>
+      <source>Quit Qplumbum</source>
+      <translation type="unfinished">Quit Qplumbum</translation>
     </message>
     <message>
-      <source>Are you sure to exit Plumbum?</source>
-      <translation type="unfinished">Are you sure to exit Plumbum?</translation>
+      <source>Are you sure to exit Qplumbum?</source>
+      <translation type="unfinished">Are you sure to exit Qplumbum?</translation>
     </message>
     <message numerus="yes">
       <source>Removing Connection(s)</source>
@@ -1362,9 +1362,9 @@ This entry is ignored by V2Ray core when using DoH servers.</source>
       <translation type="unfinished">Network Settings</translation>
     </message>
     <message>
-      <source>These settings are used by Plumbum itself.
+      <source>These settings are used by Qplumbum itself.
 For example, for updating subscriptions.</source>
-      <translation type="unfinished">These settings are used by Plumbum itself.
+      <translation type="unfinished">These settings are used by Qplumbum itself.
 For example, for updating subscriptions.</translation>
     </message>
     <message>
@@ -1384,8 +1384,8 @@ For example, for updating subscriptions.</translation>
       <translation type="unfinished">ICMPing</translation>
     </message>
     <message>
-      <source>Plumbum Proxy</source>
-      <translation type="unfinished">Plumbum Proxy</translation>
+      <source>Qplumbum Proxy</source>
+      <translation type="unfinished">Qplumbum Proxy</translation>
     </message>
     <message>
       <source>System Proxy</source>
@@ -1462,8 +1462,8 @@ Direct connection of Local LAN addresses
 Custom DNS Settings</translation>
     </message>
     <message>
-      <source>Plumbum will allocate ports, for HTTP and SOCKS respectively, if enabled, for each kernel plugin.</source>
-      <translation type="unfinished">Plumbum will allocate ports, for HTTP and SOCKS respectively, if enabled, for each kernel plugin.</translation>
+      <source>Qplumbum will allocate ports, for HTTP and SOCKS respectively, if enabled, for each kernel plugin.</source>
+      <translation type="unfinished">Qplumbum will allocate ports, for HTTP and SOCKS respectively, if enabled, for each kernel plugin.</translation>
     </message>
     <message>
       <source>Port Allocation Start</source>
@@ -1622,8 +1622,8 @@ Custom DNS Settings</translation>
       <translation type="unfinished">Testing</translation>
     </message>
     <message>
-      <source>Plumbum</source>
-      <translation type="unfinished">Plumbum</translation>
+      <source>Qplumbum</source>
+      <translation type="unfinished">Qplumbum</translation>
     </message>
     <message>
       <source>Version:</source>
@@ -1764,11 +1764,11 @@ But could damage your server if improperly used.</translation>
       <translation type="unfinished">Watch Out!</translation>
     </message>
     <message>
-      <source>You may be about to set V2Ray core incorrectly to Plumbum itself, which is absolutely not correct.<byte value="xd"/>
-This won&apos;t trigger a fork bomb, however, since Plumbum works in singleton mode.<byte value="xd"/>
+      <source>You may be about to set V2Ray core incorrectly to Qplumbum itself, which is absolutely not correct.<byte value="xd"/>
+This won&apos;t trigger a fork bomb, however, since Qplumbum works in singleton mode.<byte value="xd"/>
 If your V2Ray core filename happened to be &apos;plumbum&apos;-something, you are totally free to ignore this warning.</source>
-      <translation type="unfinished">You may be about to set V2Ray core incorrectly to Plumbum itself, which is absolutely not correct.
-This won&apos;t trigger a fork bomb, however, since Plumbum works in singleton mode.
+      <translation type="unfinished">You may be about to set V2Ray core incorrectly to Qplumbum itself, which is absolutely not correct.
+This won&apos;t trigger a fork bomb, however, since Qplumbum works in singleton mode.
 If your V2Ray core filename happened to be &apos;plumbum&apos;-something, you are totally free to ignore this warning.</translation>
     </message>
     <message>
@@ -1970,8 +1970,8 @@ If you insist to proceed, we&apos;re not providing with any support.</translatio
       <translation type="unfinished">No NTP Backend</translation>
     </message>
     <message>
-      <source>Plumbum was not built with NTP support.</source>
-      <translation type="unfinished">Plumbum was not built with NTP support.</translation>
+      <source>Qplumbum was not built with NTP support.</source>
+      <translation type="unfinished">Qplumbum was not built with NTP support.</translation>
     </message>
     <message>
       <source>Metadata Only</source>
@@ -2009,9 +2009,9 @@ If you insist to proceed, we&apos;re not providing with any support.</translatio
     </message>
     <message>
       <source>Run TCPing or ICMPing periodically after connecting to a server.
-Plumbum will give a more accurate latency value if Enabled, but makes it easy to fingerprint the connection.</source>
+Qplumbum will give a more accurate latency value if Enabled, but makes it easy to fingerprint the connection.</source>
       <translation type="unfinished">Run TCPing or ICMPing periodically after connecting to a server.
-Plumbum will give a more accurate latency value if Enabled, but makes it easy to fingerprint the connection.</translation>
+Qplumbum will give a more accurate latency value if Enabled, but makes it easy to fingerprint the connection.</translation>
     </message>
     <message>
       <source>FakeDNS+Others</source>
@@ -2071,12 +2071,12 @@ This option may be useful for some desktop environments without tray support.</t
       <translation type="unfinished">Reconnect last connection</translation>
     </message>
     <message>
-      <source>Exit Plumbum</source>
-      <translation type="unfinished">Exit Plumbum</translation>
+      <source>Exit Qplumbum</source>
+      <translation type="unfinished">Exit Qplumbum</translation>
     </message>
     <message>
-      <source>Plumbum - A cross-platform Qt frontend for V2Ray.</source>
-      <translation type="unfinished">Plumbum - A cross-platform Qt frontend for V2Ray.</translation>
+      <source>Qplumbum - A cross-platform Qt frontend for V2Ray.</source>
+      <translation type="unfinished">Qplumbum - A cross-platform Qt frontend for V2Ray.</translation>
     </message>
     <message>
       <source>DNS not resolved</source>
@@ -2299,52 +2299,52 @@ This option may be useful for some desktop environments without tray support.</t
       <translation type="unfinished">unknown abi</translation>
     </message>
     <message>
-      <source>Cannot Start Plumbum</source>
-      <translation type="unfinished">Cannot Start Plumbum</translation>
+      <source>Cannot Start Qplumbum</source>
+      <translation type="unfinished">Cannot Start Qplumbum</translation>
     </message>
     <message>
       <source>Cannot find a place to store config files.</source>
       <translation type="unfinished">Cannot find a place to store config files.</translation>
     </message>
     <message>
-      <source>Plumbum has searched these paths below:</source>
-      <translation type="unfinished">Plumbum has searched these paths below:</translation>
+      <source>Qplumbum has searched these paths below:</source>
+      <translation type="unfinished">Qplumbum has searched these paths below:</translation>
     </message>
     <message>
       <source>It usually means you don&apos;t have the write permission to all of those locations.</source>
       <translation type="unfinished">It usually means you don&apos;t have the write permission to all of those locations.</translation>
     </message>
     <message>
-      <source>Plumbum will now exit.</source>
-      <translation type="unfinished">Plumbum will now exit.</translation>
+      <source>Qplumbum will now exit.</source>
+      <translation type="unfinished">Qplumbum will now exit.</translation>
     </message>
     <message>
-      <source>Failed to initialise Plumbum</source>
-      <translation type="unfinished">Failed to initialise Plumbum</translation>
+      <source>Failed to initialise Qplumbum</source>
+      <translation type="unfinished">Failed to initialise Qplumbum</translation>
     </message>
     <message>
       <source>Failed to determine the location of config file:</source>
       <translation type="unfinished">Failed to determine the location of config file:</translation>
     </message>
     <message>
-      <source>Plumbum has found a config file, but it failed to be loaded due to some errors.</source>
-      <translation type="unfinished">Plumbum has found a config file, but it failed to be loaded due to some errors.</translation>
+      <source>Qplumbum has found a config file, but it failed to be loaded due to some errors.</source>
+      <translation type="unfinished">Qplumbum has found a config file, but it failed to be loaded due to some errors.</translation>
     </message>
     <message>
-      <source>A workaround is to remove the this file and restart Plumbum:</source>
-      <translation type="unfinished">A workaround is to remove the this file and restart Plumbum:</translation>
+      <source>A workaround is to remove the this file and restart Qplumbum:</source>
+      <translation type="unfinished">A workaround is to remove the this file and restart Qplumbum:</translation>
     </message>
     <message>
       <source>Please report if you think it&apos;s a bug.</source>
       <translation type="unfinished">Please report if you think it&apos;s a bug.</translation>
     </message>
     <message>
-      <source>Plumbum Cannot Continue</source>
-      <translation type="unfinished">Plumbum Cannot Continue</translation>
+      <source>Qplumbum Cannot Continue</source>
+      <translation type="unfinished">Qplumbum Cannot Continue</translation>
     </message>
     <message>
-      <source>You are running a lower version of Plumbum compared to the current config file.</source>
-      <translation type="unfinished">You are running a lower version of Plumbum compared to the current config file.</translation>
+      <source>You are running a lower version of Qplumbum compared to the current config file.</source>
+      <translation type="unfinished">You are running a lower version of Qplumbum compared to the current config file.</translation>
     </message>
     <message>
       <source>Please check if there&apos;s an issue explaining about it.</source>
@@ -2383,12 +2383,12 @@ This option may be useful for some desktop environments without tray support.</t
       <translation type="unfinished">Unsupported config version number: </translation>
     </message>
     <message>
-      <source>Please upgrade firstly up to Plumbum v2.0/v2.1 and try again.</source>
-      <translation type="unfinished">Please upgrade firstly up to Plumbum v2.0/v2.1 and try again.</translation>
+      <source>Please upgrade firstly up to Qplumbum v2.0/v2.1 and try again.</source>
+      <translation type="unfinished">Please upgrade firstly up to Qplumbum v2.0/v2.1 and try again.</translation>
     </message>
     <message>
-      <source>Plumbum has encountered an uncaught exception: </source>
-      <translation type="unfinished">Plumbum has encountered an uncaught exception: </translation>
+      <source>Qplumbum has encountered an uncaught exception: </source>
+      <translation type="unfinished">Qplumbum has encountered an uncaught exception: </translation>
     </message>
     <message>
       <source>Please report a bug via Github with the file located here: </source>
@@ -2418,8 +2418,8 @@ This option may be useful for some desktop environments without tray support.</t
   <context>
     <name>Plumbum::PlumbumWidgetApplication</name>
     <message>
-      <source>A new version of Plumbum is starting:</source>
-      <translation type="unfinished">A new version of Plumbum is starting:</translation>
+      <source>A new version of Qplumbum is starting:</source>
+      <translation type="unfinished">A new version of Qplumbum is starting:</translation>
     </message>
     <message>
       <source>New version information: </source>
@@ -2445,8 +2445,8 @@ This option may be useful for some desktop environments without tray support.</t
   <context>
     <name>Plumbum::components::QvUpdateChecker</name>
     <message>
-      <source>Plumbum Update</source>
-      <translation type="unfinished">Plumbum Update</translation>
+      <source>Qplumbum Update</source>
+      <translation type="unfinished">Qplumbum Update</translation>
     </message>
   </context>
   <context>
@@ -2468,16 +2468,16 @@ This option may be useful for some desktop environments without tray support.</t
       <translation type="unfinished">This plugin was built against a different version of the Plugin Interface.</translation>
     </message>
     <message>
-      <source>Please contact the plugin provider or report the issue to Plumbum Workgroup.</source>
-      <translation type="unfinished">Please contact the plugin provider or report the issue to Plumbum Workgroup.</translation>
+      <source>Please contact the plugin provider or report the issue to Qplumbum Workgroup.</source>
+      <translation type="unfinished">Please contact the plugin provider or report the issue to Qplumbum Workgroup.</translation>
     </message>
     <message>
       <source>Enabling a plugin</source>
       <translation type="unfinished">Enabling a plugin</translation>
     </message>
     <message>
-      <source>The plugin will become fully functional after restarting Plumbum.</source>
-      <translation type="unfinished">The plugin will become fully functional after restarting Plumbum.</translation>
+      <source>The plugin will become fully functional after restarting Qplumbum.</source>
+      <translation type="unfinished">The plugin will become fully functional after restarting Qplumbum.</translation>
     </message>
   </context>
   <context>
@@ -2576,8 +2576,8 @@ This option may be useful for some desktop environments without tray support.</t
       <translation type="unfinished">Core file is lacking executable permission for the current user.</translation>
     </message>
     <message>
-      <source>Plumbum tried to set, but failed because permission denied.</source>
-      <translation type="unfinished">Plumbum tried to set, but failed because permission denied.</translation>
+      <source>Qplumbum tried to set, but failed because permission denied.</source>
+      <translation type="unfinished">Qplumbum tried to set, but failed because permission denied.</translation>
     </message>
     <message>
       <source>Check is skipped</source>
@@ -3801,8 +3801,8 @@ Maybe you have downloaded the wrong core?</translation>
   <context>
     <name>MainWindowForm.ui</name>
     <message>
-      <source>Plumbum</source>
-      <translation type="unfinished">Plumbum</translation>
+      <source>Qplumbum</source>
+      <translation type="unfinished">Qplumbum</translation>
     </message>
   </context>
   <context>
@@ -3868,8 +3868,8 @@ Maybe you have downloaded the wrong core?</translation>
   <context>
     <name>MainWindowWidget</name>
     <message>
-      <source>Plumbum Utilities</source>
-      <translation type="unfinished">Plumbum Utilities</translation>
+      <source>Qplumbum Utilities</source>
+      <translation type="unfinished">Qplumbum Utilities</translation>
     </message>
   </context>
   <context>

@@ -6,8 +6,8 @@ committish=${committish:-"dev"}
 pkgrel=${pkgrel:-"1"}
 # Install git-archive-all and initialize repository
 pip install git-archive-all
-git clone https://github.com/Plumbum/Plumbum.git
-pushd Plumbum
+git clone https://github.com/ruizhi-lab/Qplumbum.git
+pushd Qplumbum
 git checkout ${committish}
 # Get git and version specs
 TAG=$(git tag -l --points-at HEAD)

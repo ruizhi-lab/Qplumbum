@@ -52,7 +52,7 @@ void PlumbumWidgetApplication::onMessageReceived(quint32 clientId, QByteArray _m
     {
         const auto newPath = msg.fullArgs.first();
         QString message;
-        message += tr("A new version of Plumbum is starting:") + NEWLINE;
+        message += tr("A new version of Qplumbum is starting:") + NEWLINE;
         message += NEWLINE;
         message += tr("New version information: ") + NEWLINE;
         message += tr("Version: %1:%2").arg(msg.version).arg(msg.buildVersion) + NEWLINE;
@@ -180,5 +180,5 @@ MessageOpt PlumbumWidgetApplication::MessageBoxAsk(QWidget *parent, const QStrin
 
 void PlumbumWidgetApplication::ShowTrayMessage(const QString &m, int msecs)
 {
-    hTray->showMessage("Plumbum", m, QIcon(":/assets/icons/plumbum.png"), msecs);
+    hTray->showMessage("Qplumbum", m, QIcon(":/assets/icons/plumbum.png"), msecs);
 }

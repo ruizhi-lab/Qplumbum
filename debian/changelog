@@ -146,7 +146,7 @@ plumbum (2.5.0~rc1-1) unstable; urgency=medium
   * add dns intercept and route for tproxy
   * prevent loopback
   * fix: allow dns outbound have mark too
-  * fix: refactored Plumbum Proxy settings
+  * fix: refactored Qplumbum Proxy settings
 
  -- Guobang Bi <ymshenyu@gmail.com>  Sat, 25 Apr 2020 10:29:07 +0800
 
