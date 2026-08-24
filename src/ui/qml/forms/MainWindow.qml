@@ -200,7 +200,12 @@ ApplicationWindow {
         Rectangle {
             Layout.fillWidth: true
             Layout.fillHeight: true
+            // This pane is the single shared rounded surface for all pages.
             color: cBackground
+            radius: 12
+            border.color: cBorder
+            border.width: 1
+            clip: true
 
             // Top status bar
             ColumnLayout {

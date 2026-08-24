@@ -426,6 +426,10 @@
             <translation>新建分组</translation>
         </message>
         <message>
+            <source>New Connection</source>
+            <translation>新建连接</translation>
+        </message>
+        <message>
             <location filename="../src/ui/qml/forms/ConnectionPage.qml" line="68" />
             <source>Import</source>
             <translation>导入</translation>
@@ -457,8 +461,176 @@
         </message>
         <message>
             <location filename="../src/ui/qml/forms/ConnectionPage.qml" line="151" />
-            <source>Click "Import" to add a server link (vmess://, vless://, ss://, trojan:// ...)</source>
-            <translation>点击 "导入" 添加服务器链接 (vmess://, vless://, ss://, trojan:// ...)</translation>
+            <source>Click "Import URL" to add a server link, or "New Connection" to configure one</source>
+            <translation>点击“导入链接”添加服务器链接，或点击“新建连接”进行配置</translation>
+        </message>
+        <message>
+            <source>Create</source>
+            <translation>创建</translation>
+        </message>
+        <message>
+            <source>Basic connection settings</source>
+            <translation>基本连接设置</translation>
+        </message>
+        <message>
+            <source>Name</source>
+            <translation>名称</translation>
+        </message>
+        <message>
+            <source>Optional display name</source>
+            <translation>可选显示名称</translation>
+        </message>
+        <message>
+            <source>Protocol</source>
+            <translation>协议</translation>
+        </message>
+        <message>
+            <source>Host</source>
+            <translation>主机</translation>
+        </message>
+        <message>
+            <source>Hostname or IP address</source>
+            <translation>主机名或 IP 地址</translation>
+        </message>
+        <message>
+            <source>Port</source>
+            <translation>端口</translation>
+        </message>
+        <message>
+            <source>UUID</source>
+            <translation>UUID</translation>
+        </message>
+        <message>
+            <source>Password</source>
+            <translation>密码</translation>
+        </message>
+        <message>
+            <source>Server password</source>
+            <translation>服务器密码</translation>
+        </message>
+        <message>
+            <source>Encryption</source>
+            <translation>加密方式</translation>
+        </message>
+        <message>
+            <source>Security</source>
+            <translation>安全选项</translation>
+        </message>
+        <message>
+            <source>Flow</source>
+            <translation>流控</translation>
+        </message>
+        <message>
+            <source>Transport settings</source>
+            <translation>传输设置</translation>
+        </message>
+        <message>
+            <source>Transport</source>
+            <translation>传输方式</translation>
+        </message>
+        <message>
+            <source>TLS</source>
+            <translation>TLS</translation>
+        </message>
+        <message>
+            <source>Enable TLS</source>
+            <translation>启用 TLS</translation>
+        </message>
+        <message>
+            <source>SNI / Host header</source>
+            <translation>SNI / Host 请求头</translation>
+        </message>
+        <message>
+            <source>Optional server name</source>
+            <translation>可选服务器名称</translation>
+        </message>
+        <message>
+            <source>Service name</source>
+            <translation>服务名称</translation>
+        </message>
+        <message>
+            <source>Path</source>
+            <translation>路径</translation>
+        </message>
+        <message>
+            <source>Optional gRPC service</source>
+            <translation>可选 gRPC 服务</translation>
+        </message>
+        <message>
+            <source>You can fine-tune the generated JSON after creation from the connection menu.</source>
+            <translation>创建后可通过连接菜单中的高级编辑调整 JSON。</translation>
+        </message>
+        <message>
+            <source>Import Connection</source>
+            <translation>导入连接</translation>
+        </message>
+        <message>
+            <source>Name/Prefix</source>
+            <translation>名称/前缀</translation>
+        </message>
+        <message>
+            <source>A prefix to the imported connection</source>
+            <translation>导入连接的名称前缀</translation>
+        </message>
+        <message>
+            <source>Link</source>
+            <translation>链接</translation>
+        </message>
+        <message>
+            <source>File</source>
+            <translation>文件</translation>
+        </message>
+        <message>
+            <source>Share Link</source>
+            <translation>分享链接</translation>
+        </message>
+        <message>
+            <source>Paste share link here, one line for each.</source>
+            <translation>在此粘贴分享链接，每行一个。</translation>
+        </message>
+        <message>
+            <source>Configuration File</source>
+            <translation>配置文件</translation>
+        </message>
+        <message>
+            <source>Select a JSON configuration file</source>
+            <translation>选择 JSON 配置文件</translation>
+        </message>
+        <message>
+            <source>Browse</source>
+            <translation>浏览</translation>
+        </message>
+        <message>
+            <source>Import as complex configuration</source>
+            <translation>作为复杂配置导入</translation>
+        </message>
+        <message>
+            <source>Select a configuration file</source>
+            <translation>选择配置文件</translation>
+        </message>
+        <message>
+            <source>JSON files (*.json)</source>
+            <translation>JSON 文件 (*.json)</translation>
+        </message>
+        <message>
+            <source>All files (*)</source>
+            <translation>所有文件 (*)</translation>
+        </message>
+        <message>
+            <source>Edit connection JSON</source>
+            <translation>编辑连接 JSON</translation>
+        </message>
+        <message>
+            <source>Cancel</source>
+            <translation>取消</translation>
+        </message>
+        <message>
+            <source>Save</source>
+            <translation>保存</translation>
+        </message>
+        <message>
+            <source>Advanced editor: changes are validated as JSON before saving.</source>
+            <translation>高级编辑器：保存前会验证 JSON 格式。</translation>
         </message>
         <message>
             <location filename="../src/ui/qml/forms/ConnectionPage.qml" line="174" />
@@ -2118,6 +2290,50 @@ Maybe you have downloaded the wrong core?</source>
             <location filename="../src/ui/qml/PlumbumQMLProperty.cpp" line="278" />
             <source>Import failed: %1</source>
             <translation>导入失败: %1</translation>
+        </message>
+        <message>
+            <source>Import failed: clipboard is unavailable.</source>
+            <translation>导入失败：剪贴板不可用。</translation>
+        </message>
+        <message>
+            <source>Import failed: clipboard is empty.</source>
+            <translation>导入失败：剪贴板为空。</translation>
+        </message>
+        <message>
+            <source>Import failed: no link was provided.</source>
+            <translation>导入失败：未提供链接。</translation>
+        </message>
+        <message>
+            <source>Import failed: no valid connection link found.</source>
+            <translation>导入失败：未找到有效的连接链接。</translation>
+        </message>
+        <message>
+            <source>Import failed: configuration file does not exist.</source>
+            <translation>导入失败：配置文件不存在。</translation>
+        </message>
+        <message>
+            <source>Import failed: no outbound configuration found.</source>
+            <translation>导入失败：未找到出站配置。</translation>
+        </message>
+        <message>
+            <source>Imported connection "%1".</source>
+            <translation>已导入连接“%1”。</translation>
+        </message>
+        <message>
+            <source>Unsupported connection protocol.</source>
+            <translation>不支持的连接协议。</translation>
+        </message>
+        <message>
+            <source>A valid server address and port are required.</source>
+            <translation>请输入有效的服务器地址和端口。</translation>
+        </message>
+        <message>
+            <source>A UUID or password is required.</source>
+            <translation>请输入 UUID 或密码。</translation>
+        </message>
+        <message>
+            <source>Connection "%1" created.</source>
+            <translation>连接“%1”已创建。</translation>
         </message>
         <message>
             <location filename="../src/ui/qml/PlumbumQMLProperty.cpp" line="289" />

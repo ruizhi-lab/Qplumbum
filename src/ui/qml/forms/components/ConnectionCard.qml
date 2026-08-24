@@ -1,7 +1,6 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
-import QtQuick.Effects
 
 // A single connection card in the list
 Item {
@@ -48,17 +47,6 @@ Item {
         layer.enabled: true
         layer.smooth: true
         layer.samples: 4
-    }
-
-    MultiEffect {
-        anchors.fill: cardRect
-        source: cardRect
-        shadowEnabled: true
-        shadowVerticalOffset: root.hovered ? 3 : 1
-        shadowBlur: root.hovered ? 1.0 : 0.7
-        shadowColor: window.isDark ? "#33000000" : "#161f3245"
-        Behavior on shadowVerticalOffset { NumberAnimation { duration: 140 } }
-        Behavior on shadowBlur { NumberAnimation { duration: 140 } }
     }
 
     // Protocol badge color

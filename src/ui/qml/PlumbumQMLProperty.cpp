@@ -1,6 +1,8 @@
 #include "PlumbumQMLProperty.hpp"
 
 #include "components/translations/QvTranslator.hpp"
+#include "core/connection/ConnectionIO.hpp"
+#include "core/connection/Generation.hpp"
 #include "core/connection/Serialization.hpp"
 #include "core/CoreUtils.hpp"
 #include "core/handler/KernelInstanceHandler.hpp"
@@ -11,6 +13,7 @@
 #include <QClipboard>
 #include <QFileInfo>
 #include <QGuiApplication>
+#include <QUrl>
 #include <QStyleHints>
 
 #ifdef Q_OS_LINUX
@@ -236,7 +239,11 @@ void PlumbumQMLProperty::refreshAll()
 
 void PlumbumQMLProperty::updateConnectivityState()
 {
-    const bool wasConnected = _connected;
+    const auto previousPair = _connectedPair;
+    const auto previousConnectionId = _connectedConnectionId;
+    const auto previousName = _connectedName;
+    const auto previousConnected = _connected;
+
     _connected = KernelInstance && !KernelInstance->CurrentConnection().isEmpty();
     if (_connected)
     {
@@ -253,7 +260,10 @@ void PlumbumQMLProperty::updateConnectivityState()
         _connectedConnectionId = NullConnectionId;
         _connectedName = {};
     }
-    emit connectivityChanged();
+
+    if (previousConnected != _connected || previousPair != _connectedPair || previousConnectionId != _connectedConnectionId
+        || previousName != _connectedName)
+        emit connectivityChanged();
 }
 
 // ---- Connectivity ----
@@ -269,7 +279,13 @@ void PlumbumQMLProperty::connectConnection(const QString &connectionId)
 void PlumbumQMLProperty::disconnectConnection()
 {
     if (ConnectionManager)
+    {
         ConnectionManager->StopConnection();
+        // StopConnection emits its event before clearing the kernel's current
+        // id. Refresh once more after it returns so the QML state also follows
+        // the final kernel state when the stop event is delayed or suppressed.
+        updateConnectivityState();
+    }
 }
 
 void PlumbumQMLProperty::restartConnection()
@@ -299,14 +315,29 @@ bool PlumbumQMLProperty::importFromClipboard()
 {
     const auto clipboard = QGuiApplication::clipboard();
     if (!clipboard)
+    {
+        emit toastMessage(tr("Import failed: clipboard is unavailable."));
         return false;
-    return importFromLink(clipboard->text());
+    }
+
+    const auto text = clipboard->text().trimmed();
+    if (text.isEmpty())
+    {
+        emit toastMessage(tr("Import failed: clipboard is empty."));
+        return false;
+    }
+    return importFromLink(text);
 }
 
 bool PlumbumQMLProperty::importFromLink(const QString &link)
 {
-    if (!ConnectionManager || link.trimmed().isEmpty())
+    if (!ConnectionManager)
         return false;
+    if (link.trimmed().isEmpty())
+    {
+        emit toastMessage(tr("Import failed: no link was provided."));
+        return false;
+    }
     QStringList lines = SplitLines(link);
     int count = 0;
     for (const auto &line : lines)
@@ -328,7 +359,133 @@ bool PlumbumQMLProperty::importFromLink(const QString &link)
     }
     if (count > 0)
         emit toastMessage(tr("Imported %1 connection(s)").arg(count));
+    else
+        emit toastMessage(tr("Import failed: no valid connection link found."));
     return count > 0;
+}
+
+bool PlumbumQMLProperty::importFromFile(const QString &filePath, bool importComplex, const QString &namePrefix)
+{
+    if (!ConnectionManager)
+        return false;
+
+    auto path = filePath.trimmed();
+    const QUrl url(path);
+    if (url.isLocalFile())
+        path = url.toLocalFile();
+    const QFileInfo fileInfo(path);
+    if (!fileInfo.exists() || !fileInfo.isFile())
+    {
+        emit toastMessage(tr("Import failed: configuration file does not exist."));
+        return false;
+    }
+
+    const auto root = ConvertConfigFromFile(path, importComplex);
+    if (root["outbounds"].toArray().isEmpty())
+    {
+        emit toastMessage(tr("Import failed: no outbound configuration found."));
+        return false;
+    }
+
+    auto name = namePrefix.trimmed();
+    if (name.isEmpty())
+        name = fileInfo.completeBaseName();
+    ConnectionManager->CreateConnection(root, name, _currentGroupId);
+    emit toastMessage(tr("Imported connection \"%1\".").arg(name));
+    return true;
+}
+
+bool PlumbumQMLProperty::createConnection(const QString &displayName,
+                                          const QString &protocol,
+                                          const QString &address,
+                                          int port,
+                                          const QString &credential,
+                                          const QString &method,
+                                          const QString &transport,
+                                          bool tls,
+                                          const QString &serverName,
+                                          const QString &path)
+{
+    if (!ConnectionManager)
+        return false;
+
+    const auto type = protocol.trimmed().toLower();
+    const auto host = address.trimmed();
+    const auto secret = credential.trimmed();
+    if (!QStringList{ "vmess", "vless", "shadowsocks", "trojan" }.contains(type))
+    {
+        emit toastMessage(tr("Unsupported connection protocol."));
+        return false;
+    }
+    if (host.isEmpty() || port < 1 || port > 65535)
+    {
+        emit toastMessage(tr("A valid server address and port are required."));
+        return false;
+    }
+    if (secret.isEmpty())
+    {
+        emit toastMessage(tr("A UUID or password is required."));
+        return false;
+    }
+
+    QJsonObject settings;
+    if (type == "vmess")
+    {
+        const QJsonObject user{ { "id", secret }, { "alterId", 0 }, { "security", method.isEmpty() ? "auto" : method }, { "level", 0 } };
+        settings["vnext"] = QJsonArray{ QJsonObject{ { "address", host }, { "port", port }, { "users", QJsonArray{ user } } } };
+    }
+    else if (type == "vless")
+    {
+        QJsonObject user{ { "id", secret }, { "encryption", "none" } };
+        if (!method.trimmed().isEmpty())
+            user["flow"] = method.trimmed();
+        settings["vnext"] = QJsonArray{ QJsonObject{ { "address", host }, { "port", port }, { "users", QJsonArray{ user } } } };
+    }
+    else if (type == "shadowsocks")
+    {
+        const QJsonObject server{ { "address", host }, { "port", port }, { "method", method.isEmpty() ? "aes-256-gcm" : method }, { "password", secret } };
+        settings["servers"] = QJsonArray{ server };
+    }
+    else
+    {
+        const QJsonObject server{ { "address", host }, { "port", port }, { "password", secret }, { "level", 0 } };
+        settings["servers"] = QJsonArray{ server };
+    }
+
+    QJsonObject stream;
+    const auto network = transport.trimmed().toLower().isEmpty() ? QStringLiteral("tcp") : transport.trimmed().toLower();
+    if (network != "tcp")
+        stream["network"] = network;
+    if (tls)
+    {
+        stream["security"] = "tls";
+        QJsonObject tlsSettings;
+        if (!serverName.trimmed().isEmpty())
+            tlsSettings["serverName"] = serverName.trimmed();
+        stream["tlsSettings"] = tlsSettings;
+    }
+    if (network == "ws")
+    {
+        QJsonObject wsSettings{ { "path", path.trimmed().isEmpty() ? QStringLiteral("/") : path.trimmed() } };
+        if (!serverName.trimmed().isEmpty())
+            wsSettings["headers"] = QJsonObject{ { "Host", serverName.trimmed() } };
+        stream["wsSettings"] = wsSettings;
+    }
+    else if (network == "grpc")
+    {
+        stream["grpcSettings"] = QJsonObject{ { "serviceName", path.trimmed() } };
+    }
+
+    OUTBOUNDSETTING outboundSettings(settings);
+    const auto outbound = GenerateOutboundEntry(OUTBOUND_TAG_PROXY, type, outboundSettings, stream);
+    CONFIGROOT root;
+    root["outbounds"] = QJsonArray{ outbound };
+    auto name = displayName.trimmed();
+    if (name.isEmpty())
+        name = type.toUpper() + "/" + host + ":" + QString::number(port);
+    ConnectionManager->CreateConnection(root, name, _currentGroupId);
+    emit toastMessage(tr("Connection \"%1\" created.").arg(name));
+    return true;
 }
 
 QString PlumbumQMLProperty::createGroup(const QString &name)

@@ -330,6 +330,17 @@ class PlumbumQMLProperty : public QObject
     // Import & Create
     bool importFromClipboard();
     bool importFromLink(const QString &link);
+    bool importFromFile(const QString &filePath, bool importComplex, const QString &namePrefix);
+    bool createConnection(const QString &displayName,
+                          const QString &protocol,
+                          const QString &address,
+                          int port,
+                          const QString &credential,
+                          const QString &method,
+                          const QString &transport,
+                          bool tls,
+                          const QString &serverName,
+                          const QString &path);
     QString createGroup(const QString &name);
     void deleteGroup(const QString &groupId);
     void renameGroup(const QString &groupId, const QString &newName);

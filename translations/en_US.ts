@@ -4025,6 +4025,10 @@ Maybe you have downloaded the wrong core?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>New Connection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Import</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4049,7 +4053,159 @@ Maybe you have downloaded the wrong core?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Click &quot;Import&quot; to add a server link (vmess://, vless://, ss://, trojan:// ...)</source>
+        <source>Click &quot;Import URL&quot; to add a server link, or &quot;New Connection&quot; to configure one</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Create</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Basic connection settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Optional display name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Protocol</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Host</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hostname or IP address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>UUID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Server password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Encryption</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Security</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Flow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transport settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transport</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TLS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable TLS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SNI / Host header</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Optional server name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Service name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Optional gRPC service</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>You can fine-tune the generated JSON after creation from the connection menu.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import Connection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Name/Prefix</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A prefix to the imported connection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Share Link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Paste share link here, one line for each.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Configuration File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select a JSON configuration file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Browse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import as complex configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select a configuration file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>JSON files (*.json)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>All files (*)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4066,14 +4222,6 @@ Maybe you have downloaded the wrong core?</source>
     </message>
     <message>
         <source>Advanced editor: changes are validated as JSON before saving.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Import from link</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Paste one or more share links below:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4521,11 +4669,55 @@ Maybe you have downloaded the wrong core?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Import failed: clipboard is unavailable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import failed: clipboard is empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import failed: no link was provided.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Import failed: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Imported %1 connection(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import failed: no valid connection link found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import failed: configuration file does not exist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import failed: no outbound configuration found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Imported connection &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unsupported connection protocol.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A valid server address and port are required.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A UUID or password is required.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connection &quot;%1&quot; created.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
